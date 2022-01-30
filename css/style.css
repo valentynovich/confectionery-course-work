@@ -1,0 +1,344 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1600px;
+  padding-left: 255px;
+  padding-right: 255px;
+  margin: 0 auto;
+}
+
+/* img {
+  display: block;
+} */
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* -------header------- */
+
+.header {
+  background-color: #fcf1f4;
+  display: flex;
+}
+
+/* .header-navigation {
+} */
+
+.header-list {
+  align-items: center;
+  display: flex;
+}
+
+.header-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #150101;
+  opacity: 0.6;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-btn {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #fafafa;
+  margin-left: 172px;
+  background: #d23166;
+  border-radius: 5px;
+  width: 165px;
+  height: 49px;
+  border: transparent;
+  margin-right: 0;
+}
+
+.curent {
+  color: #d23166;
+}
+
+/* -------hero------- */
+
+.hero {
+  display: flex;
+  background: #fcf1f4;
+}
+
+.hero-div-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #0f0101;
+  margin-bottom: 6px;
+}
+
+.hero-div-h2 {
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 57.33px;
+  line-height: 120.5%;
+  /* or 69px */
+  color: #0f0101;
+  margin-bottom: 35px;
+  opacity: 0.9;
+}
+
+.hero-text {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0f0101;
+  margin-bottom: 50px;
+  opacity: 0.6;
+}
+
+.btn-hero {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #fafafa;
+  background: #d23166;
+  border-radius: 5px;
+  width: 165px;
+  height: 49px;
+  border: transparent;
+}
+
+/* -------benefits------- */
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 91px;
+}
+
+.benefits-title {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #000000;
+  margin-bottom: 9px;
+  text-align: center;
+}
+
+.benefits-text {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.38;
+  text-align: center;
+  color: #000000;
+  opacity: 0.6;
+}
+
+/* ------product-of-the-day----- */
+
+.product-of-the-day {
+  display: flex;
+  background: #f8edf0;
+}
+
+.potd-title {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44.2px;
+  line-height: 1.11;
+  color: #150101;
+  margin-bottom: 16px;
+}
+
+.podt-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #150101;
+  margin-bottom: 35px;
+  opacity: 0.6;
+}
+
+.btn-potd {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #fafafa;
+  background: #d64374;
+  border-radius: 5px;
+  width: 165px;
+  height: 49px;
+  border: transparent;
+}
+
+/* ------our-product------ */
+
+.our-product {
+  background: #e5e5e5;
+}
+
+.our-product-title {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44.2px;
+  line-height: 1.38;
+  color: #150101;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.our-product-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 110px;
+}
+
+.our-product-item:not(:last-child) {
+  margin-right: 39px;
+}
+
+.our-product-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.curent2 {
+  color: #000000;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #000000;
+}
+
+.product-title {
+  font-family: Hind Madurai;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.39;
+  color: #000000;
+  margin-bottom: 11px;
+}
+
+.product-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.btn-product {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #fafafa;
+  background: #d64374;
+  border-radius: 5px;
+  width: 165px;
+  height: 49px;
+  border: transparent;
+}
+
+/* ------simple-way-------*/
+
+.simple-way-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44.2px;
+  line-height: 1.18;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.simple-way-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #0f0101;
+  opacity: 0.7;
+  margin-bottom: 31px;
+}
+
+.simpl-way-choic-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.18;
+  color: #000000;
+}
+
+/* ------simple-way-------*/
+
+.question {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.18;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 28px;
+}
