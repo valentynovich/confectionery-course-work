@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@500;600&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -45,7 +51,8 @@
       <div class="hero-div">
         <h1 class="hero-div-title">Sweet fun, full of milk.</h1>
         <h2 class="hero-div-h2">
-          Feel inside cold with our delicious ice-cream.
+          Feel inside cold with our delicious
+          <span class="span-hero-h2">ice-cream.</span>
         </h2>
         <p class="hero-text">
           Some food has looked so awful that it's looked like something that the
@@ -109,7 +116,7 @@
       <h2 class="our-product-title">Our Product</h2>
       <ul class="our-product-list list">
         <li class="our-product-item">
-          <a href="" class="link curent2">ICE CREAM</a>
+          <a href="" class="link our-product-link curent2">ICE CREAM</a>
         </li>
         <li class="our-product-item">
           <a href="" class="our-product-link link">CAYENNE CHOCOLATE</a>
@@ -175,11 +182,15 @@
       </div>
     </section>
     <section class="container question">
-      <h3 class="questio-title">Have Question in Mind? Let us help you</h3>
-      <form action="#">
-        <input type="text" class="question-input" placeholder="Enter your
-        question" name="user-text />
-        <button type="submit">Send</button>
+      <h3 class="question-title">Have Question in Mind? Let us help you</h3>
+      <form action="#" class="question-form">
+        <input
+          type="text"
+          class="question-input"
+          placeholder="Enter your question"
+          name="user-text"
+        />
+        <button type="submit" class="question-btn">Send</button>
       </form>
     </section>
     <footer class="container footer">
@@ -197,23 +208,23 @@
           <li class="footer-social-item"></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-orientate-div">
         <ul class="footer-orientate-list list">
-          <li class="footer-orientate-item">Home</li>
-          <li class="footer-orientate-item">Product</li>
-          <li class="footer-orientate-item">Blog</li>
-          <li class="footer-orientate-item">Pricing</li>
-          <li class="footer-orientate-item">Testimonials</li>
-          <li class="footer-orientate-item">Contact Us</li>
+          <li class="footer-orientate-item"><a>Home</a></li>
+          <li class="footer-orientate-item"><a>Product</a></li>
+          <li class="footer-orientate-item"><a>Blog</a></li>
+          <li class="footer-orientate-item"><a>Pricing</a></li>
+          <li class="footer-orientate-item"><a>Testimonials</a></li>
+          <li class="footer-orientate-item"><a>Contact Us</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-information-div">
         <ul class="footer-information-list list">
-          <li class="footer-information-item">Delivery Information</li>
-          <li class="footer-information-item">Privacy Policy</li>
-          <li class="footer-information-item">Terms & Condition</li>
-          <li class="footer-information-item">Search Terms</li>
-          <li class="footer-information-item">Order & Return</li>
+          <li class="footer-information-item"><a>Delivery Information</a></li>
+          <li class="footer-information-item"><a>Privacy Policy</a></li>
+          <li class="footer-information-item"><a>Terms & Condition</a></li>
+          <li class="footer-information-item"><a>Search Terms</a></li>
+          <li class="footer-information-item"><a>Order & Return</a></li>
         </ul>
       </div>
       <div class="footer-div-subscription">
