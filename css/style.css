@@ -666,7 +666,8 @@ img {
 }
 
 .all input {
-  display: none;
+  appearance: none;
+  position: absolute;
 }
 
 #switch1:checked ~ #slides img[src="./images/2img1.jpg"] {
