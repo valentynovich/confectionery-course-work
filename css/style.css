@@ -898,19 +898,24 @@ img {
   margin-right: 10px;
 }
 
+.footer-social-icon::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .footer-social-icon {
-  z-index: 3;
   position: relative;
   transition: background-color 200ms linear;
 }
 
-a.footer-social-icon > img {
-  z-index: 0;
-  position: relative;
-}
-
-.footer-social-icon:hover,
-.footer-social-icon:focus {
+.footer-social-icon:hover::after,
+.footer-social-icon:focus::after {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
