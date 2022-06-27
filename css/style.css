@@ -1,3 +1,16 @@
+:root {
+  --background-header-hero: #fcf1f4;
+  --header-color-menu: #726163;
+  --heder-color-menu-hover: #d23166;
+  --background-btn: #d23166;
+  --background-btn-hover: #d64360;
+  --width-btn: 165px;
+  --heigth-btn: 49px;
+  --transition-time: 200ms;
+  --cubic-bezier: linear;
+  --footer-text: #b5b4b4;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -43,7 +56,7 @@ img {
 /* -------header------- */
 
 .header {
-  background-color: #fcf1f4;
+  background-color: var(--background-header-hero);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,8 +83,8 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: #726163;
-  transition: color 200ms linear;
+  color: var(--header-color-menu);
+  transition: color var(--transition-time) var(--cubic-bezier);
 }
 
 /* .header-link::before {
@@ -95,7 +108,7 @@ img {
 
 .header-link:hover,
 .header-link:focus {
-  color: #d23166;
+  color: var(--heder-color-menu-hover);
 }
 
 .header-item:not(:last-child) {
@@ -109,25 +122,26 @@ img {
   line-height: 1.38;
   color: #fafafa;
   margin-left: 172px;
-  background-color: #d23166;
+  background-color: var(--background-btn);
   border-radius: 5px;
-  width: 165px;
-  height: 49px;
+  width: var(--width-btn);
+  height: var(--heigth-btn);
   user-select: none;
   text-align: center;
   padding-top: 14px;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color 200ms linear, box-shadow 200ms linear;
+  transition: background-color var(--transition-time) var(--cubic-bezier),
+    box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
 .header-btn:hover,
 .header-btn:focus {
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
-  background-color: #d64374;
+  background-color: var(--background-btn-hover);
 }
 
 .curent {
-  color: #d23166;
+  color: var(--heder-color-menu-hover);
   position: relative;
 }
 
@@ -136,7 +150,7 @@ img {
   display: inline-block;
   width: 100%;
   height: 3px;
-  background-color: #d23166;
+  background-color: var(--heder-color-menu-hover);
   position: absolute;
   top: 101%;
   right: 0px;
@@ -146,7 +160,7 @@ img {
 
 .hero {
   display: flex;
-  background: #fcf1f4;
+  background-color: var(--background-header-hero);
 }
 
 .hero-div {
@@ -156,7 +170,6 @@ img {
 }
 
 .hero-div-title {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -193,23 +206,24 @@ img {
   font-size: 16px;
   line-height: 1.38;
   color: #fafafa;
-  background: #d23166;
-  width: 165px;
-  height: 49px;
+  background: var(--background-btn);
+  width: var(--width-btn);
+  height: var(--heigth-btn);
   display: block;
   padding-top: 13px;
   user-select: none;
   text-align: center;
   border-radius: 5px;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color 200ms linear, box-shadow 300ms linear;
+  transition: background-color var(--transition-time) var(--cubic-bezier),
+    box-shadow var(--transition-time) var(--cubic-bezier);
   position: relative;
 }
 
 .btn-hero:hover,
 .btn-hero:focus {
   /* box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2); */
-  background-color: #d64374;
+  background-color: var(--background-btn-hover);
   box-shadow: none;
 }
 
@@ -222,7 +236,7 @@ img {
   position: absolute;
   opacity: 0;
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
-  transition: opasity 200ms linear;
+  transition: opasity var(--transition-time) var(--cubic-bezier);
 }
 
 .btn-hero:hover::after,
@@ -296,7 +310,8 @@ img {
   border: 1px solid #f7f7f7;
   display: inline-block;
   padding: 33px 26px 23px 26px;
-  transition: border-color 200ms linear, box-shadow 200ms linear;
+  transition: border-color var(--transition-time) var(--cubic-bezier),
+    box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
 .benefits-item-link:hover,
@@ -356,7 +371,6 @@ img {
 }
 
 .potd-text {
-  font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -364,15 +378,14 @@ img {
 }
 
 .btn-potd {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: #fafafa;
-  background-color: #d23166;
+  background-color: var(--background-btn);
   border-radius: 5px;
-  width: 165px;
-  height: 49px;
+  width: var(--width-btn);
+  height: var(--heigth-btn);
   display: block;
   padding-top: 15.04px;
   text-align: center;
@@ -380,13 +393,14 @@ img {
   user-select: none;
   margin-top: 35px;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color 200ms linear, box-shadow 200ms linear;
+  transition: background-color var(--transition-time) var(--cubic-bezier),
+    box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
 .btn-potd:hover,
 .btn-potd:focus {
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
-  background-color: #d64374;
+  background-color: var(--background-btn-hover);
 }
 
 .potd-img-div {
@@ -444,12 +458,11 @@ img {
 }
 
 .our-product-link {
-  font-family: Roboto;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
   color: #666666;
-  transition: color 200ms linear;
+  transition: color var(--transition-time) var(--cubic-bezier);
   position: relative;
   /* для эксперимента с анимацией */
   /* display: inline-block;
@@ -473,7 +486,7 @@ img {
   top: 101%;
   right: 0px;
   transform: scale(0);
-  transition: transform 200ms linear;
+  transition: transform var(--transition-time) var(--cubic-bezier);
 }
 
 .our-product-link:hover::before,
@@ -566,7 +579,7 @@ img {
 }
 
 .product-price {
-  font-family: "Hind Madurai";
+  font-family: Hind Madurai;
   font-weight: 500;
   font-size: 26px;
   line-height: 1.38;
@@ -575,7 +588,7 @@ img {
 }
 
 .product-old-price {
-  font-family: "Hind Madurai";
+  font-family: Hind Madurai;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
@@ -591,23 +604,24 @@ img {
   font-size: 16px;
   line-height: 1.19;
   color: #fafafa;
-  background-color: #d23166;
+  background-color: var(--background-btn);
   border-radius: 5px;
-  width: 165px;
-  height: 49px;
+  width: var(--width-btn);
+  height: var(--heigth-btn);
   user-select: none;
   /* display: block; */
   /* padding-top: 15px; */
   /* text-align: center; */
   border: transparent;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color 200ms linear, box-shadow 200ms linear;
+  transition: background-color var(--transition-time) var(--cubic-bezier),
+    box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
 .btn-product:hover,
 .btn-product:focus {
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
-  background-color: #d64374;
+  background-color: var(--background-btn-hover);
 }
 
 .product list {
@@ -769,8 +783,6 @@ article label {
 }
 
 .simple-way-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 44.2px;
   line-height: 1.18;
@@ -779,8 +791,6 @@ article label {
 }
 
 .simple-way-text {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
@@ -809,8 +819,6 @@ article label {
 }
 
 .simple-way-choice-text {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 1.18;
@@ -840,8 +848,6 @@ article label {
 }
 
 .question-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 1.18;
@@ -879,7 +885,7 @@ article label {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  transition: color 200ms linear;
+  transition: color var(--transition-time) var(--cubic-bezier);
 }
 
 .question-input:hover::placeholder,
@@ -888,7 +894,7 @@ article label {
 }
 
 .question-btn {
-  background: #d23166;
+  background: var(--background-btn);
   border-radius: 5px;
   color: #ffffff;
   width: 134px;
@@ -901,13 +907,14 @@ article label {
   line-height: 1.15;
   user-select: none;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color 200ms linear, box-shadow 200ms linear;
+  transition: background-color var(--transition-time) var(--cubic-bezier),
+    box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
 .question-btn:hover,
 .question-btn:focus {
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
-  background-color: #d64374;
+  background-color: var(--background-btn-hover);
 }
 
 /* ------footer-------*/
@@ -925,9 +932,7 @@ article label {
 }
 
 .footer-text {
-  color: #b5b4b4;
-  font-family: Roboto;
-  font-style: normal;
+  color: var(--footer-text);
   font-weight: 500;
   font-size: 12px;
   line-height: 1.42;
@@ -937,8 +942,6 @@ article label {
 }
 
 .footer-title-social {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
@@ -967,7 +970,7 @@ article label {
 
 .footer-social-icon {
   position: relative;
-  transition: background-color 200ms linear;
+  transition: background-color var(--transition-time) var(--cubic-bezier);
 }
 
 .footer-social-icon:hover::after,
@@ -994,13 +997,11 @@ article label {
 }
 
 .footer-link {
-  color: #b5b4b4;
-  font-family: Roboto;
-  font-style: normal;
+  color: var(--footer-text);
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-  transition: color 200ms linear;
+  transition: color var(--transition-time) var(--cubic-bezier);
 }
 
 .footer-link:hover,
@@ -1014,8 +1015,6 @@ article label {
 }
 
 .footer-subscription-title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -1028,7 +1027,7 @@ article label {
 }
 
 .footer-input-subscription {
-  border: 2px solid #d23166;
+  border: 2px solid var(--background-btn);
   box-sizing: border-box;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -1041,13 +1040,11 @@ article label {
 }
 
 .footer-input-subscription::placeholder {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: #9d9c9c;
-  transition: color 200ms linear;
+  transition: color var(--transition-time) var(--cubic-bezier);
 }
 
 .footer-input-subscription:hover::placeholder,
@@ -1056,7 +1053,7 @@ article label {
 }
 
 .footer-btn-subscription {
-  background: #d23166;
+  background: var(--background-btn);
   width: 125px;
   height: 55px;
   border-top-right-radius: 5px;
@@ -1067,7 +1064,8 @@ article label {
   line-height: 1.15;
   color: #ffffff;
   border: transparent;
-  transition: color 200ms linear, text-shadow 200ms linear;
+  transition: color var(--transition-time) var(--cubic-bezier),
+    text-shadow var(--transition-time) var(--cubic-bezier);
   margin-bottom: 2px;
   user-select: none;
   /* transition: background-color 200ms linear, box-shadow 200ms linear,
