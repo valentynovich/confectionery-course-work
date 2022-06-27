@@ -23,33 +23,33 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header class="header container">
+      <a href="" class="heager-logo link"
+        ><img src="./images/logo-polar.png" alt="" width="79" height="79"
+      /></a>
+      <nav class="header-navigation">
+        <ul class="list header-list">
+          <li class="header-item">
+            <a href="" class="link header-link curent">Home</a>
+          </li>
+          <li class="header-item">
+            <a href="" class="link header-link">Product</a>
+          </li>
+          <li class="list header-item">
+            <a href="" class="link header-link">Pricing</a>
+          </li>
+          <li class="list header-item">
+            <a href="" class="link header-link">Testimonials</a>
+          </li>
+          <li class="list header-item">
+            <a href="" class="link header-link">Contact Us</a>
+          </li>
+        </ul>
+        <a href="" class="header-btn link">Buy Now</a>
+      </nav>
+      <!-- <button type="button" class="header-btn">Buy Now</button> -->
+    </header>
     <main>
-      <header class="header container">
-        <a href="" class="heager-logo link"
-          ><img src="./images/logo-polar.png" alt="" width="79" height="79"
-        /></a>
-        <nav class="header-navigation">
-          <ul class="list header-list">
-            <li class="header-item">
-              <a href="" class="link header-link curent">Home</a>
-            </li>
-            <li class="header-item">
-              <a href="" class="link header-link">Product</a>
-            </li>
-            <li class="list header-item">
-              <a href="" class="link header-link">Pricing</a>
-            </li>
-            <li class="list header-item">
-              <a href="" class="link header-link">Testimonials</a>
-            </li>
-            <li class="list header-item">
-              <a href="" class="link header-link">Contact Us</a>
-            </li>
-          </ul>
-          <a href="" class="header-btn link">Buy Now</a>
-        </nav>
-        <!-- <button type="button" class="header-btn">Buy Now</button> -->
-      </header>
       <section class="hero container">
         <div class="hero-div">
           <h1 class="hero-div-title">Sweet fun, full of milk.</h1>
@@ -183,6 +183,10 @@
                 Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
                 a pioneer in the healthy fast food scene.
               </p>
+              <p class="product-price">
+                $19.55
+                <span class="product-old-price">$22.55</span>
+              </p>
               <button type="button" class="btn-product">Buy Now</button>
             </div>
           </li>
@@ -193,6 +197,10 @@
                 Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
                 Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
                 a pioneer in the healthy fast food scene.
+              </p>
+              <p class="product-price">
+                $19.55
+                <span class="product-old-price">$22.55</span>
               </p>
               <button type="button" class="btn-product">Buy Now</button>
             </div>
@@ -221,6 +229,10 @@
                 Pain is a pioneer in the healthy fast food scene.Bon Au Pain is
                 a pioneer in the healthy fast food scene.
               </p>
+              <p class="product-price">
+                $19.55
+                <span class="product-old-price">$22.55</span>
+              </p>
               <button type="button" class="btn-product">Buy Now</button>
             </div>
           </li>
@@ -228,7 +240,7 @@
         <div class="div-reviews">
           <div class="all">
             <input checked type="radio" name="respond" id="desktop" />
-            <div id="slider">
+            <article id="slider">
               <input checked type="radio" name="slider" id="switch1" />
               <input type="radio" name="slider" id="switch2" />
               <input type="radio" name="slider" id="switch3" />
@@ -236,33 +248,41 @@
               <div id="slides">
                 <div id="overflow">
                   <div class="image">
-                    <img
-                      src="./images/2img1.jpg"
-                      alt=""
-                      width="86"
-                      height="86"
-                    />
+                    <article>
+                      <img
+                        src="./images/2img1.jpg"
+                        alt=""
+                        width="100"
+                        height="86"
+                      />
+                    </article>
 
-                    <img
-                      src="./images/2img2.jpg"
-                      alt=""
-                      width="86"
-                      height="86"
-                    />
+                    <article>
+                      <img
+                        src="./images/2img2.jpg"
+                        alt=""
+                        width="100"
+                        height="86"
+                      />
+                    </article>
 
-                    <img
-                      src="./images/2img3.jpg"
-                      alt=""
-                      width="86"
-                      height="86"
-                    />
+                    <article>
+                      <img
+                        src="./images/2img3.jpg"
+                        alt=""
+                        width="100"
+                        height="86"
+                      />
+                    </article>
 
-                    <img
-                      src="./images/2img4.jpg"
-                      alt=""
-                      width="86"
-                      height="86"
-                    />
+                    <article>
+                      <img
+                        src="./images/2img4.jpg"
+                        alt=""
+                        width="100"
+                        height="86"
+                      />
+                    </article>
                   </div>
                 </div>
               </div>
@@ -272,7 +292,13 @@
                 <label for="switch3"></label>
                 <label for="switch4"></label>
               </div>
-            </div>
+              <div id="active">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+              </div>
+            </article>
           </div>
           <div class="chocklad-icecream">
             <img

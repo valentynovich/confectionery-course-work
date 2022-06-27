@@ -67,7 +67,6 @@ img {
 }
 
 .header-link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -105,7 +104,6 @@ img {
 
 .header-btn {
   font-family: Hind Madurai;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.38;
@@ -159,7 +157,6 @@ img {
 
 .hero-div-title {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -169,7 +166,6 @@ img {
 
 .hero-div-h2 {
   font-family: Fredoka One;
-  font-style: normal;
   font-weight: 500;
   font-size: 57.33px;
   line-height: 120.5%;
@@ -183,8 +179,7 @@ img {
 
 .hero-text {
   font-family: Hind Madurai;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
   color: #6e6163;
@@ -194,7 +189,6 @@ img {
 
 .btn-hero {
   font-family: Hind Madurai;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.38;
@@ -208,13 +202,32 @@ img {
   text-align: center;
   border-radius: 5px;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color 200ms linear, box-shadow 200ms linear;
+  transition: background-color 200ms linear, box-shadow 300ms linear;
+  position: relative;
 }
 
 .btn-hero:hover,
 .btn-hero:focus {
-  box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2); */
   background-color: #d64374;
+  box-shadow: none;
+}
+
+.btn-hero::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
+  transition: opasity 200ms linear;
+}
+
+.btn-hero:hover::after,
+.btn-hero:focus::after {
+  opacity: 1;
 }
 
 .hero-img-container {
@@ -301,7 +314,6 @@ img {
 
 .benefits-title {
   font-family: Hind Madurai;
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.4;
@@ -312,7 +324,6 @@ img {
 
 .benefits-text {
   font-family: Hind Madurai;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.38;
@@ -336,7 +347,6 @@ img {
 
 .potd-title {
   font-family: Hind Madurai;
-  font-style: normal;
   font-weight: 600;
   font-size: 44.2px;
   line-height: 1.11;
@@ -347,7 +357,6 @@ img {
 
 .potd-text {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -356,7 +365,6 @@ img {
 
 .btn-potd {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -410,7 +418,6 @@ img {
 
 .our-product-title {
   font-family: Hind Madurai;
-  font-style: normal;
   font-weight: 600;
   font-size: 44.2px;
   line-height: 1.38;
@@ -438,7 +445,6 @@ img {
 
 .our-product-link {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
@@ -542,7 +548,6 @@ img {
 
 .product-title {
   font-family: Hind Madurai;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.39;
@@ -552,7 +557,6 @@ img {
 
 .product-text {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -561,9 +565,28 @@ img {
   margin-bottom: 28px;
 }
 
+.product-price {
+  font-family: "Hind Madurai";
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.38;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.product-old-price {
+  font-family: "Hind Madurai";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-decoration-line: line-through;
+  color: #000000;
+  opacity: 0.7;
+  margin-left: 5px;
+}
+
 .btn-product {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -605,6 +628,10 @@ img {
   width: 345px;
 }
 
+.all input {
+  display: none;
+}
+
 #slider {
   position: relative;
   text-align: center;
@@ -612,8 +639,8 @@ img {
   margin: 0 auto;
 }
 
-#slides .image > img {
-  width: 20%;
+#slides article {
+  width: 25%;
   float: left;
   transition: all 200ms linear;
 }
@@ -621,19 +648,22 @@ img {
 #slides .image {
   width: 50%;
   line-height: 0;
+  /* display: flex; */
+  transition: all 200ms linear;
 }
 
 #overflow {
   width: 100%;
+  /* height: 75px; */
   overflow: hidden;
 }
 
-.image > img {
+article img {
   width: 100%;
 }
 
 #desktop:checked ~ #slider {
-  max-width: 100px;
+  max-width: 400px;
 }
 
 #switch1:checked ~ #controls label:nth-child(4),
@@ -642,7 +672,7 @@ img {
 #switch4:checked ~ #controls label:nth-child(3) {
   background: url(../images/reviews/Vector.svg) no-repeat;
   float: right;
-  margin: 0 0 0 -4px;
+  margin: 0 0 0 -20px;
   display: block;
   width: 14px;
   height: 14px;
@@ -654,46 +684,71 @@ img {
 #switch4:checked ~ #controls label:nth-child(1) {
   background: url(../images/reviews/Vector-left.svg) no-repeat;
   float: left;
-  margin: 0 0 0 0;
+  margin: 0 -20px 0 0;
   display: block;
   width: 14px;
   height: 14px;
 }
 
-#controls > label {
+article label {
   cursor: pointer;
-  transition: opacity 200ms linear;
 }
 
-.all input {
-  appearance: none;
-  position: absolute;
-}
-
-#switch1:checked ~ #slides img[src="./images/2img1.jpg"] {
+#switch1:checked ~ #slides .image {
   margin-left: 0;
 }
 
-#switch2:checked ~ #slides img[src="./images/2img2.jpg"] {
+#switch2:checked ~ #slides .image {
   margin-left: -100%;
 }
 
-#switch3:checked ~ #slides img[src="./images/2img4.jpg"] {
+#switch3:checked ~ #slides .image {
   margin-left: -200%;
 }
 
-#switch4:checked ~ #slides img[src="./images/2img3.jpg"] {
+#switch4:checked ~ #slides .image {
   margin-left: -300%;
 }
 
 #controls {
-  margin: 25% 0 0 0;
+  margin: -25% 0 0 0;
   width: 100%;
   height: 50px;
 }
 
+#controls label {
+  transition: all 200ms linear;
+}
+
 #controls label:hover {
   opacity: 0.6;
+}
+
+#active label {
+  border-radius: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #bbb;
+  transition: all 200ms linear;
+}
+
+#active {
+  margin: 23% 0 0;
+  text-align: center;
+}
+
+#active label:hover {
+  background: #76c8ff;
+  border-color: #777;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4) {
+  background: #18a3dd;
+  border-color: #18a3dd;
 }
 
 /* ------simple-way-------*/
@@ -1007,7 +1062,6 @@ img {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.15;
