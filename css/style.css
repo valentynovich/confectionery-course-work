@@ -25,15 +25,6 @@ h6 {
   margin: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  cursor: pointer;
-}
-
 .container {
   width: 1600px;
   padding-left: 220px;
@@ -43,6 +34,8 @@ button {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -51,6 +44,31 @@ button {
 
 img {
   display: block;
+}
+
+.button {
+  font-family: "Hind Madurai";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.04em;
+  color: #fafafa;
+  background: var(--background-btn);
+  width: var(--width-btn);
+  height: var(--heigth-btn);
+  display: block;
+  user-select: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color var(--transition-time) var(--cubic-bezier),
+    box-shadow var(--transition-time) var(--cubic-bezier);
+}
+
+.button--plus {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+  line-break: 3em;
 }
 
 /* -------header------- */
@@ -62,24 +80,22 @@ img {
   align-items: center;
 }
 
-.heager-logo {
-  width: 79px;
-  height: 79px;
+.heager__logo {
   margin-top: 10px;
 }
 
-.header-navigation {
+.header__navigation {
   align-items: center;
   display: flex;
   margin-top: 25px;
 }
 
-.header-list {
+.header__list {
   align-items: center;
   display: flex;
 }
 
-.header-link {
+.header__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -106,46 +122,35 @@ img {
   transform: scale(1);
 } */
 
-.header-link:hover,
-.header-link:focus {
+.header__link:hover,
+.header__link:focus {
   color: var(--heder-color-menu-hover);
 }
 
-.header-item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.header-btn {
-  font-family: Hind Madurai;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.38;
-  color: #fafafa;
+.header__button {
   margin-left: 172px;
-  background-color: var(--background-btn);
+  margin-top: 25px;
   border-radius: 5px;
-  width: var(--width-btn);
-  height: var(--heigth-btn);
-  user-select: none;
-  text-align: center;
   padding-top: 14px;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color var(--transition-time) var(--cubic-bezier),
-    box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
-.header-btn:hover,
-.header-btn:focus {
+.header__button:hover,
+.header__button:focus {
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
   background-color: var(--background-btn-hover);
 }
 
-.curent {
+.header__link--curent {
   color: var(--heder-color-menu-hover);
   position: relative;
 }
 
-.curent::after {
+.header__link--curent::after {
   content: "";
   display: inline-block;
   width: 100%;
@@ -163,13 +168,13 @@ img {
   background-color: var(--background-header-hero);
 }
 
-.hero-div {
+.hero__text-container {
   max-width: 665px;
   margin-top: 197px;
   margin-bottom: 213px;
 }
 
-.hero-div-title {
+.hero__title {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -177,21 +182,22 @@ img {
   margin-bottom: 6px;
 }
 
-.hero-div-h2 {
-  font-family: Fredoka One;
+.hero__call-to-action {
+  font-family: "Fredoka One";
   font-weight: 500;
   font-size: 57.33px;
   line-height: 120.5%;
   color: #27191a;
   margin-bottom: 35px;
+  display: block;
 }
 
-.span-hero-h2 {
+.hero__call-to-action--span {
   color: #d64574;
 }
 
-.hero-text {
-  font-family: Hind Madurai;
+.hero__text {
+  font-family: "Hind Madurai";
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
@@ -200,34 +206,21 @@ img {
   padding-right: 140px;
 }
 
-.btn-hero {
-  font-family: Hind Madurai;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.38;
-  color: #fafafa;
-  background: var(--background-btn);
-  width: var(--width-btn);
-  height: var(--heigth-btn);
-  display: block;
-  padding-top: 13px;
-  user-select: none;
-  text-align: center;
+.hero__button {
   border-radius: 5px;
+  padding-top: 13px;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color var(--transition-time) var(--cubic-bezier),
-    box-shadow var(--transition-time) var(--cubic-bezier);
   position: relative;
 }
 
-.btn-hero:hover,
-.btn-hero:focus {
+.hero__button:hover,
+.hero__button:focus {
   /* box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2); */
   background-color: var(--background-btn-hover);
   box-shadow: none;
 }
 
-.btn-hero::after {
+.hero__button::after {
   content: "";
   top: 0;
   left: 0;
@@ -239,18 +232,18 @@ img {
   transition: opasity var(--transition-time) var(--cubic-bezier);
 }
 
-.btn-hero:hover::after,
-.btn-hero:focus::after {
+.hero__button:hover::after,
+.hero__button:focus::after {
   opacity: 1;
 }
 
-.hero-img-container {
+.hero__img-container {
   margin-left: 30px;
   width: 597px;
   height: 580px;
 }
 
-.hero-img {
+.hero__img {
   background-image: url(../images/milk-icecream-hero.png),
     url(../images/icecream-hero.png);
   background-position: bottom -120px left -150px, center;
@@ -264,7 +257,7 @@ img {
   /* z-index: 5; */
 }
 
-.hero-img-circle {
+.hero__img-circle {
   /* content: ""; */
   position: relative;
   width: 365px;
@@ -276,7 +269,7 @@ img {
   display: inline-block;
 }
 
-.hero-img-circle::after {
+.hero__img-circle::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -296,15 +289,15 @@ img {
   background-color: #fcfcfc;
 }
 
-.benefits-list {
+.benefits__list {
   display: flex;
 }
 
-.benefits-item:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 39px;
 }
 
-.benefits-item-link {
+.benefits__link {
   background-color: #fff;
   border-radius: 7px;
   border: 1px solid #f7f7f7;
@@ -314,20 +307,20 @@ img {
     box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
-.benefits-item-link:hover,
-.benefits-item-link:focus {
+.benefits__link:hover,
+.benefits__link:focus {
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.05);
   border-color: transparent;
 }
 
-.benefits-icon-item {
+.benefits__icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
 }
 
-.benefits-title {
+.benefits__title {
   font-family: Hind Madurai;
   font-weight: 600;
   font-size: 20px;
@@ -337,7 +330,7 @@ img {
   text-align: center;
 }
 
-.benefits-text {
+.benefits__text {
   font-family: Hind Madurai;
   font-weight: 500;
   font-size: 14px;
@@ -348,19 +341,19 @@ img {
 
 /* ------product-of-the-day----- */
 
-.product-of-the-day {
+.potd {
   display: flex;
   align-items: center;
   background: #f8edf0;
 }
 
-.potd-description {
+.potd__description-container {
   max-width: 445px;
   margin-top: 141px;
   margin-bottom: 146px;
 }
 
-.potd-title {
+.potd__title {
   font-family: Hind Madurai;
   font-weight: 600;
   font-size: 44.2px;
@@ -370,40 +363,27 @@ img {
   /* margin-top: 141px; */
 }
 
-.potd-text {
+.potd__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #705f60;
 }
 
-.btn-potd {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  color: #fafafa;
-  background-color: var(--background-btn);
-  border-radius: 5px;
-  width: var(--width-btn);
-  height: var(--heigth-btn);
-  display: block;
+.potd__button {
   padding-top: 15.04px;
-  text-align: center;
-  display: inline-block;
-  user-select: none;
   margin-top: 35px;
+  border-radius: 5px;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color var(--transition-time) var(--cubic-bezier),
-    box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
-.btn-potd:hover,
-.btn-potd:focus {
+.potd__button:hover,
+.potd__button:focus {
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
   background-color: var(--background-btn-hover);
 }
 
-.potd-img-div {
+.potd__img {
   height: 500px;
   margin-left: 74px;
   position: relative;
@@ -411,7 +391,7 @@ img {
   align-items: center;
 }
 
-.potd-img-div::after {
+.potd__img::after {
   content: "";
   background-color: #edb5c7;
   width: 240px;
@@ -423,15 +403,15 @@ img {
   left: 210px;
 }
 
-/* ------our-product------ */
+/* ------products------ */
 
-.our-product {
+.products {
   padding-top: 137px;
   padding-bottom: 174px;
 }
 
-.our-product-title {
-  font-family: Hind Madurai;
+.products__title-menu {
+  font-family: "Hind Madurai";
   font-weight: 600;
   font-size: 44.2px;
   line-height: 1.38;
@@ -448,16 +428,16 @@ img {
   display: block;
 } */
 
-.our-product-list {
+.products__list-menu {
   display: flex;
   justify-content: center;
   margin-bottom: 110px;
 }
-.our-product-item:not(:last-child) {
+.products__item-menu:not(:last-child) {
   margin-right: 39px;
 }
 
-.our-product-link {
+.products__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
@@ -471,12 +451,12 @@ img {
   background-color: #150101; */
 }
 
-.our-product-link:hover,
-.our-product-link:focus {
+.products__link:hover,
+.products__link:focus {
   color: #000000;
 }
 
-.our-product-link::before {
+.products__link::before {
   content: "";
   display: inline-block;
   width: 100%;
@@ -489,13 +469,13 @@ img {
   transition: transform var(--transition-time) var(--cubic-bezier);
 }
 
-.our-product-link:hover::before,
-.our-product-link:focus::before {
+.products__link:hover::before,
+.products__link:focus::before {
   transform: scale(1);
 }
 
-.our-product-item:first-child > .our-product-link:hover::before,
-.our-product-item:first-child > .our-product-link:focus::before {
+.products__item-menu:first-child > .products__link:hover::before,
+.products__item-menu:first-child > .products__link:focus::before {
   transform: scale(0);
 }
 
@@ -530,37 +510,37 @@ img {
 
 /* конец эксперимента с анимацией*/
 
-.curent2 {
+.products__link--curent {
   color: #000000;
 }
 
-.product {
+.products__list {
   margin-bottom: 112px;
 }
 
-.product-item {
+.products__item {
   display: flex;
   align-items: center;
 }
 
-.product-item:not(:last-child) {
+.products__item:not(:last-child) {
   margin-bottom: 33px;
 }
 
-.product-img-1 {
+.products__img--1 {
   margin-right: 85px;
 }
 
-.product-img-2 {
+.products__img--2 {
   margin-left: 84px;
 }
 
-.product-img-3 {
+.products__img--3 {
   margin-right: 87px;
 }
 
-.product-title {
-  font-family: Hind Madurai;
+.products__title {
+  font-family: "Hind Madurai";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.39;
@@ -568,8 +548,7 @@ img {
   margin-bottom: 11px;
 }
 
-.product-text {
-  font-family: Roboto;
+.products__text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -578,8 +557,8 @@ img {
   margin-bottom: 28px;
 }
 
-.product-price {
-  font-family: Hind Madurai;
+.products__price {
+  font-family: "Hind Madurai";
   font-weight: 500;
   font-size: 26px;
   line-height: 1.38;
@@ -587,8 +566,8 @@ img {
   margin-bottom: 16px;
 }
 
-.product-old-price {
-  font-family: Hind Madurai;
+.products__old-price {
+  font-family: "Hind Madurai";
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
@@ -598,39 +577,21 @@ img {
   margin-left: 5px;
 }
 
-.btn-product {
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  color: #fafafa;
-  background-color: var(--background-btn);
+.products__button {
   border-radius: 5px;
-  width: var(--width-btn);
-  height: var(--heigth-btn);
-  user-select: none;
-  /* display: block; */
-  /* padding-top: 15px; */
-  /* text-align: center; */
   border: transparent;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color var(--transition-time) var(--cubic-bezier),
-    box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
-.btn-product:hover,
-.btn-product:focus {
+.products__button:hover,
+.products__button:focus {
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
   background-color: var(--background-btn-hover);
 }
 
-.product list {
-  margin-bottom: 112px;
-}
-
 /*---начало отзывов----*/
 
-.div-reviews {
+.reviews {
   display: flex;
 }
 
@@ -774,15 +735,15 @@ article label {
   display: flex;
 }
 
-.simple-way-img {
+.simple-way__img {
   margin-right: 134px;
 }
 
-.simple-way-div {
+.simple-way__content {
   width: 607px;
 }
 
-.simple-way-title {
+.simple-way__title {
   font-weight: 500;
   font-size: 44.2px;
   line-height: 1.18;
@@ -790,7 +751,7 @@ article label {
   margin-bottom: 20px;
 }
 
-.simple-way-text {
+.simple-way__text {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
@@ -798,16 +759,16 @@ article label {
   margin-bottom: 31px;
 }
 
-.simple-way-choice-item:not(:last-child) {
+.simple-way__choice-item:not(:last-child) {
   margin-bottom: 19px;
 }
 
-.simple-way-link {
+.simple-way__choice-link {
   display: flex;
   align-items: center;
 }
 
-.simple-way-icon-item {
+.simple-way__choice-icon {
   width: 30px;
   height: 30px;
   border-radius: 3px;
@@ -818,25 +779,25 @@ article label {
   margin-right: 10px;
 }
 
-.simple-way-choice-text {
+.simple-way__choice-text {
   font-weight: 500;
   font-size: 22px;
   line-height: 1.18;
   color: black;
 }
 
-.simple-way-choice {
+.simple-way__choice {
   margin-bottom: 41px;
 }
 
-.simple-way-apps {
+.simple-way__apps-list {
   display: flex;
   align-items: center;
   position: relative;
   left: -11px;
 }
 
-.apps-item + .apps-item {
+.simple-way__apps-item + .simple-way__apps-item {
   margin-left: 7px;
 }
 
@@ -847,7 +808,7 @@ article label {
   padding-bottom: 149px;
 }
 
-.question-title {
+.question__title {
   font-weight: 500;
   font-size: 44px;
   line-height: 1.18;
@@ -859,14 +820,14 @@ article label {
   margin-right: auto;
 }
 
-.question-form {
+.question__form {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 
-.question-input {
+.question__input {
   background-color: #fafafa;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -878,7 +839,7 @@ article label {
   color: #6d6464;
 }
 
-.question-input::placeholder {
+.question__input::placeholder {
   color: #b5b4b4;
   font-family: Roboto;
   font-style: normal;
@@ -888,31 +849,21 @@ article label {
   transition: color var(--transition-time) var(--cubic-bezier);
 }
 
-.question-input:hover::placeholder,
-.question-input:focus::placeholder {
+.question__input:hover::placeholder,
+.question__input:focus::placeholder {
   color: #6d6464;
 }
 
-.question-btn {
-  background: var(--background-btn);
-  border-radius: 5px;
-  color: #ffffff;
+.question__button {
   width: 134px;
   height: 74px;
+  border-radius: 5px;
   border: transparent;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.15;
-  user-select: none;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color var(--transition-time) var(--cubic-bezier),
-    box-shadow var(--transition-time) var(--cubic-bezier);
 }
 
-.question-btn:hover,
-.question-btn:focus {
+.question__button:hover,
+.question__button:focus {
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
   background-color: var(--background-btn-hover);
 }
@@ -923,15 +874,13 @@ article label {
   padding-bottom: 104px;
   display: flex;
   background: #0a0808;
-  /* z-index: -2;
-  position: relative; */
 }
 
-.footer-about {
+.footer__about-container {
   margin-top: 70px;
 }
 
-.footer-text {
+.footer__text {
   color: var(--footer-text);
   font-weight: 500;
   font-size: 12px;
@@ -941,7 +890,7 @@ article label {
   margin-top: 9px;
 }
 
-.footer-title-social {
+.footer__social-title {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
@@ -949,15 +898,15 @@ article label {
   margin-bottom: 8px;
 }
 
-.footer-social-list {
+.footer__social-list {
   display: flex;
 }
 
-.footer-social-item:not(:last-child) {
+.footer__social-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-social-icon::after {
+.footer__social-icon::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -968,35 +917,35 @@ article label {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.footer-social-icon {
+.footer__social-icon {
   position: relative;
   transition: background-color var(--transition-time) var(--cubic-bezier);
 }
 
-.footer-social-icon:hover::after,
-.footer-social-icon:focus::after {
+.footer__social-icon:hover::after,
+.footer__social-icon:focus::after {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.footer-orientate-div {
+.footer__orientate-container {
   margin-left: 37px;
   margin-top: 143px;
 }
 
-.footer-orientate-item:not(:last-child) {
+.footer__orientate-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.footer-information-div {
+.footer__information-container {
   margin-left: 132px;
   margin-top: 150px;
 }
 
-.footer-information-item:not(:last-child) {
+.footer__information-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.footer-link {
+.footer__link {
   color: var(--footer-text);
   font-weight: 400;
   font-size: 12px;
@@ -1004,17 +953,17 @@ article label {
   transition: color var(--transition-time) var(--cubic-bezier);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer__link:hover,
+.footer__link:focus {
   color: #ffffff;
 }
 
-.footer-div-subscription {
+.footer__subscription-container {
   margin-left: 151px;
   margin-top: 136px;
 }
 
-.footer-subscription-title {
+.footer__subscription-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -1022,11 +971,11 @@ article label {
   margin-bottom: 13px;
 }
 
-.footer-form-subscription {
+.footer__form {
   display: flex;
 }
 
-.footer-input-subscription {
+.footer__input {
   border: 2px solid var(--background-btn);
   box-sizing: border-box;
   border-top-left-radius: 5px;
@@ -1039,7 +988,7 @@ article label {
   padding-left: 32px;
 }
 
-.footer-input-subscription::placeholder {
+.footer__input::placeholder {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -1047,44 +996,33 @@ article label {
   transition: color var(--transition-time) var(--cubic-bezier);
 }
 
-.footer-input-subscription:hover::placeholder,
-.footer-input-subscription:focus::placeholder {
+.footer__input:hover::placeholder,
+.footer__input:focus::placeholder {
   color: #fff;
 }
 
-.footer-btn-subscription {
-  background: var(--background-btn);
+.footer__button {
   width: 125px;
   height: 55px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.15;
-  color: #ffffff;
   border: transparent;
   transition: color var(--transition-time) var(--cubic-bezier),
     text-shadow var(--transition-time) var(--cubic-bezier);
   margin-bottom: 2px;
-  user-select: none;
-  /* transition: background-color 200ms linear, box-shadow 200ms linear,
-    color 200ms linear, text-shadow 200ms linear; */
 }
 
-.footer-btn-subscription:hover,
-.footer-btn-subscription:focus {
+.footer__button:hover,
+.footer__button:focus {
   color: #9d9c9c;
   text-shadow: 0.5px 0.5px 0.5px white;
-  /* box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
-  background-color: #d64374; */
 }
 
-.footer-payment-systems {
+.payment-systems__list {
   display: flex;
   align-items: center;
 }
 
-.footer-payment-systems-item + .footer-payment-systems-item {
+.payment-systems__item + .payment-systems__item {
   margin-left: 10px;
 }
