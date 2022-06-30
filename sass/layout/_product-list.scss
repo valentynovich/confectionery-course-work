@@ -1,14 +1,16 @@
-.products__list {
+.products-list {
     margin-bottom: 112px;
-}
-
-.products__item {
-    display: flex;
-    align-items: center;
-    &:not(:last-child) {
-            margin-bottom: 33px;
+    &__item {
+            display: flex;
+            align-items: center;
+    
+            &:not(:last-child) {
+                margin-bottom: 33px;
+            }
         }
 }
+
+
 
 
 .products__img {
@@ -23,46 +25,46 @@
                 }
 }
 
-
-
-.products__title-list {
-    font-family: "Hind Madurai";
-    @include font(26px, 1.39, 700);
-    color: #000000;
-    margin-bottom: 11px;
-}
-
-.products__text {
-    color: #4d4d4d;
-    @include font(null, 1.5);
-    width: 454px;
-    margin-bottom: 28px;
-}
-
-.products__price {
-    font-family: "Hind Madurai";
-    @include font(26px, 1.38);
-    color: #000000;
-    margin-bottom: 16px;
-}
-
-.products__old-price {
-    font-family: "Hind Madurai";
-    @include font(20px, 1.4);
-    text-decoration-line: line-through;
-    color: #000000;
-    opacity: 0.7;
-    margin-left: 5px;
-}
-
-.products__button {
-    @extend %button;
-    border-radius: 5px;
-    border: transparent;
-    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-    &:hover, &:focus {
-            box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
-            background-color: $background-btn-hover;
+.product-description {
+    &__title {
+        font-family: "Hind Madurai";
+        @include font(26px, 1.39, 700);
+        color: #000000;
+        margin-bottom: 11px;
+    }
+    &__text {
+        color: #4d4d4d;
+        @include font(null, 1.5);
+        width: 454px;
+        margin-bottom: 28px;
+    }
+    &__price {
+        font-family: "Hind Madurai";
+        @include font(26px, 1.38);
+        color: #000000;
+        margin-bottom: 16px;
+    }
+    &__old-price {
+            font-family: "Hind Madurai";
+            @include font(20px, 1.4);
+            text-decoration-line: line-through;
+            color: #000000;
+            opacity: 0.7;
+            margin-left: 5px;
+        }
+    &__button {
+            @extend %button;
+            border-radius: 5px;
+            border: transparent;
+            box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+        
+            &:hover,
+            &:focus {
+                box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
+                background-color: $background-btn-hover;
+            }
         }
 }
+
+
 

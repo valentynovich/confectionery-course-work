@@ -1,62 +1,71 @@
 .simple-way {
-        & {
-            background-color: #f8edf0;
-            padding-top: 90px;
-            padding-bottom: 150px;
+    background-color: #f8edf0;
+    padding-top: 90px;
+    padding-bottom: 150px;
+    display: flex;
+    &__flex {
             display: flex;
         }
-        &__flex {
-            display: flex;
-        }
-        &__img {
-            margin-right: 134px;
-        }
-        &__content {
-            width: 607px;
-        }
-        &__title {
+    &__img {
+                    margin-right: 134px;
+                }
+}
+
+.content {
+    &__container {
+    width: 607px;
+    }
+    &__title {
             color: #000000;
             @include font(44.2px, 1.18);
             margin-bottom: 20px;
         }
-        &__text {
-            color: #554949;
-            @include font(18px, 1.17);
-            margin-bottom: 31px;
-        }
-        &__choice-item:not(:last-child) {
-            margin-bottom: 19px;
-        }
-        &__choice-link {
+    &__text {
+                    color: #554949;
+                    @include font(18px, 1.17);
+                    margin-bottom: 31px;
+                }
+    }
+
+
+.choice-list {
+    margin-bottom: 41px;
+    &__item:not(:last-child) {
+        margin-bottom: 19px;
+    }
+    &__link {
             display: flex;
             align-items: center;
         }
-        &__choice-icon {
-            width: 30px;
-            height: 30px;
-            border-radius: 3px;
-            background-color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-        }
-        &__choice-text {
-            color: black;
-            @include font(22px, 1.18);
-        }
-        &__choice {
-            margin-bottom: 41px;
-        }
-        &__apps-list {
-            display: flex;
-            align-items: center;
-            position: relative;
-            left: -11px;
-        }
-        &__apps-item {
+    &__text {
+                    color: black;
+                    @include font(22px, 1.18);
+                }
+}
+
+.choice-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.apps-list {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -11px;
+    &__item {
             &+& {
                 margin-left: 7px;
             }
         }
 }
+
+
+
+

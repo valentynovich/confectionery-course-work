@@ -1,5 +1,7 @@
 .header {
     background-color: $background-header-hero;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .header__flex {
@@ -9,40 +11,45 @@
 }
 
 .heager__logo {
-    margin-top: 10px;
+    margin-top:5px;
 }
 
-.header__navigation {
+.site-navigation {
     align-items: center;
     display: flex;
-    margin-top: 25px;
+
 }
 
-.header__list {
+.site-list {
     align-items: center;
     display: flex;
-}
-
-.header__link {
-    color: $header-color-menu;
-    @include font(14px, 1.14);
-    transition: color $transition-time $cubic-bezier;
-        &:hover,
-        &:focus {
-            color: $heder-color-menu-hover;
+    &__item:not(:last-child) {
+            margin-right: 40px;
         }
-        &--curent {
-            color: $heder-color-menu-hover;
-            position: relative;
-            &::after {
-                content: "";
-                display: inline-block;
-                width: 100%;
-                height: 3px;
-                background-color: $heder-color-menu-hover;
-                position: absolute;
-                top: 101%;
-                right: 0px;
+    &__link {
+            color: $header-color-menu;
+            @include font(14px, 1.14);
+            transition: color $transition-time $cubic-bezier;
+        
+            &:hover,
+            &:focus {
+                color: $heder-color-menu-hover;
+            }
+        
+            &--curent {
+                color: $heder-color-menu-hover;
+                position: relative;
+        
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $heder-color-menu-hover;
+                    position: absolute;
+                    top: 101%;
+                    right: 0px;
+                }
             }
         }
 }
@@ -50,17 +57,9 @@
 
 
 
-
-
-
-.header__item:not(:last-child) {
-    margin-right: 40px;
-}
-
 .header__button {
     @extend %button;
     margin-left: 172px;
-    margin-top: 25px;
     border-radius: 5px;
     padding-top: 14px;
     box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);

@@ -818,7 +818,7 @@ article label {
   justify-content: center;
 }
 
-.question__input {
+.question__textarea {
   background-color: #fafafa;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -828,18 +828,23 @@ article label {
   border: transparent;
   padding-left: 30px;
   color: #6d6464;
+  resize: none;
+  padding-top: 29px;
 }
 
-.question__input::placeholder {
+.question__textarea::placeholder {
   color: #b5b4b4;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   transition: color var(--transition-time) var(--cubic-bezier);
 }
 
-.question__input:hover::placeholder,
-.question__input:focus::placeholder {
+.question__textarea:hover::placeholder,
+.question__textarea:focus::placeholder {
   color: #6d6464;
 }
 

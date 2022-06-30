@@ -1,68 +1,74 @@
-.footer__subscription-container {
-    margin-left: 151px;
-    margin-top: 136px;
+.subscription {
+    &__container {
+            margin-left: 151px;
+            margin-top: 136px;
+        }
+    &__title {
+            color: #ffffff;
+            @include font(null, 1.19);
+            margin-bottom: 13px;
+        }
 }
 
-.footer__subscription-title {
-    color: #ffffff;
-    @include font(null, 1.19);
-    margin-bottom: 13px;
-}
 
-.footer__form {
+
+.footer-form {
     display: flex;
-}
-
-.footer__input {
-    border: 2px solid $background-btn;
-    box-sizing: border-box;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    outline: none;
-    background-color: #0a0808;
-    width: 270;
-    height: 55px;
-    color: #ffffff;
-    padding-left: 32px;
-    &::placeholder {            
-            color: #9d9c9c;
-            @include font(14px, 1.14);
-            transition: color $transition-time $cubic-bezier;
+    &__input {
+            border: 2px solid $background-btn;
+            box-sizing: border-box;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            outline: none;
+            background-color: #0a0808;
+            width: 270;
+            height: 55px;
+            color: #ffffff;
+            padding-left: 32px;    
+            &::placeholder {
+                color: #9d9c9c;
+                @include font(14px, 1.14);
+                transition: color $transition-time $cubic-bezier;
+            }    
+            &:hover,
+            &:focus {
+                &::placeholder {
+                    color: #fff;
+                }
+            }
         }
-    &:hover,
-    &:focus {&::placeholder {
-                        color: #fff;
-                    }}
-}
-
-
-
-
-
-.footer__button {
-    width: 125px;
-    height: 55px;
-    @extend %button;
-    @include font(20px, 1.15);    
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border: transparent;
-    transition: color $transition-time $cubic-bezier,
-        text-shadow $transition-time $cubic-bezier;
-    margin-bottom: 2px;
-    &:focus, &:hover {
-            color: #9d9c9c;
-            text-shadow: 0.5px 0.5px 0.5px white;
+    &__button {
+            width: 125px;
+            height: 55px;
+            @extend %button;
+            @include font(20px, 1.15);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border: transparent;
+            transition: color $transition-time $cubic-bezier,
+                text-shadow $transition-time $cubic-bezier;
+            margin-bottom: 2px;
+        
+            &:focus,
+            &:hover {
+                color: #9d9c9c;
+                text-shadow: 0.5px 0.5px 0.5px white;
+            }
         }
 }
 
 
 
-.payment-systems__list {
+.payment-systems {
+    &__list{
     display: flex;
     align-items: center;
+    }
+        &__item+&__item {
+            margin-left: 10px;
+        }
 }
 
-.payment-systems__item { & + & {
-    margin-left: 10px;}
-}
+// .payment-systems__item { &__item + &__item {
+//     margin-left: 10px;}
+// }

@@ -1,12 +1,11 @@
 .products {
     padding-top: 137px;
     padding-bottom: 174px;
-}
-
-.products__title {
-    font-family: "Hind Madurai";
-    @include font(44.2px, 1.38, 600);
-    color: #150101;
-    margin-bottom: 64px;
-    text-align: center;
+    &__title {
+            font-family: "Hind Madurai";
+            @include font(44.2px, 1.38, 600);
+            color: #150101;
+            margin-bottom: 64px;
+            text-align: center;
+        }
 }

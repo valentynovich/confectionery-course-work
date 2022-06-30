@@ -40,7 +40,7 @@ body {
   margin: 0 auto;
 }
 
-.footer__button, .question__button, .products__button, .potd__button, .hero__button, .header__button {
+.footer-form__button, .question-form__button, .product-description__button, .description__button, .hero__button, .header__button {
   font-family: "Hind Madurai";
   font-weight: 700;
   line-height: 1.38;
@@ -57,6 +57,8 @@ body {
 
 .header {
   background-color: #fcf1f4;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .header__flex {
@@ -66,35 +68,36 @@ body {
 }
 
 .heager__logo {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
-.header__navigation {
-  align-items: center;
-  display: flex;
-  margin-top: 25px;
-}
-
-.header__list {
+.site-navigation {
   align-items: center;
   display: flex;
 }
 
-.header__link {
+.site-list {
+  align-items: center;
+  display: flex;
+}
+.site-list__item:not(:last-child) {
+  margin-right: 40px;
+}
+.site-list__link {
   color: #726163;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   transition: color 200ms linear;
 }
-.header__link:hover, .header__link:focus {
+.site-list__link:hover, .site-list__link:focus {
   color: #d23166;
 }
-.header__link--curent {
+.site-list__link--curent {
   color: #d23166;
   position: relative;
 }
-.header__link--curent::after {
+.site-list__link--curent::after {
   content: "";
   display: inline-block;
   width: 100%;
@@ -105,13 +108,8 @@ body {
   right: 0px;
 }
 
-.header__item:not(:last-child) {
-  margin-right: 40px;
-}
-
 .header__button {
   margin-left: 172px;
-  margin-top: 25px;
   border-radius: 5px;
   padding-top: 14px;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
@@ -239,13 +237,14 @@ body {
   padding-bottom: 128px;
   background-color: #fcfcfc;
 }
-.benefits__list {
+
+.benefits-list {
   display: flex;
 }
-.benefits__item:not(:last-child) {
+.benefits-list__item:not(:last-child) {
   margin-right: 39px;
 }
-.benefits__link {
+.benefits-list__link {
   background-color: #fff;
   border-radius: 7px;
   border: 1px solid #f7f7f7;
@@ -253,17 +252,11 @@ body {
   padding: 33px 26px 23px 26px;
   transition: border-color 200ms linear, box-shadow 200ms linear;
 }
-.benefits__link:hover, .benefits__link:focus {
+.benefits-list__link:hover, .benefits-list__link:focus {
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.05);
   border-color: transparent;
 }
-.benefits__icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 25px;
-}
-.benefits__title {
+.benefits-list__title {
   font-family: Hind Madurai;
   font-weight: 600;
   font-size: 20px;
@@ -272,13 +265,20 @@ body {
   margin-bottom: 9px;
   text-align: center;
 }
-.benefits__text {
+.benefits-list__text {
   font-family: Hind Madurai;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.38;
   text-align: center;
   color: #666666;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .potd {
@@ -288,12 +288,13 @@ body {
   display: flex;
   align-items: center;
 }
-.potd__description-container {
+
+.description__container {
   max-width: 445px;
   margin-top: 141px;
   margin-bottom: 146px;
 }
-.potd__title {
+.description__title {
   font-family: Hind Madurai;
   font-weight: 600;
   font-size: 44.2px;
@@ -302,28 +303,29 @@ body {
   margin-bottom: 16px;
   /* margin-top: 141px; */
 }
-.potd__text {
+.description__text {
   color: #705f60;
   line-height: 1.5;
 }
-.potd__button {
+.description__button {
   padding-top: 15.04px;
   margin-top: 35px;
   border-radius: 5px;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
 }
-.potd__button:hover, .potd__button:focus {
+.description__button:hover, .description__button:focus {
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
   background-color: #d64360;
 }
-.potd__img {
+
+.image-in-section {
   height: 500px;
   margin-left: 74px;
   position: relative;
   display: flex;
   align-items: center;
 }
-.potd__img::after {
+.image-in-section::after {
   content: "";
   background-color: #edb5c7;
   width: 240px;
@@ -339,7 +341,6 @@ body {
   padding-top: 137px;
   padding-bottom: 174px;
 }
-
 .products__title {
   font-family: "Hind Madurai";
   font-weight: 600;
@@ -350,13 +351,15 @@ body {
   text-align: center;
 }
 
-.products__list-menu {
+.products-menu__list {
   display: flex;
   justify-content: center;
   margin-bottom: 110px;
 }
-
-.products__link {
+.products-menu__item:not(:last-child) {
+  margin-right: 39px;
+}
+.products-menu__link {
   color: #666666;
   font-weight: 500;
   font-size: 18px;
@@ -364,7 +367,7 @@ body {
   transition: color 200ms linear;
   position: relative;
 }
-.products__link::before {
+.products-menu__link::before {
   content: "";
   display: inline-block;
   width: 100%;
@@ -376,32 +379,27 @@ body {
   transform: scale(0);
   transition: transform 200ms linear;
 }
-.products__link:hover, .products__link:focus {
+.products-menu__link:hover, .products-menu__link:focus {
   color: #000000;
 }
-.products__link:hover::before, .products__link:focus::before {
+.products-menu__link:hover::before, .products-menu__link:focus::before {
   transform: scale(1);
 }
-.products__link--curent {
+.products-menu__link--curent {
   color: #000000;
 }
-.products__item-menu:first-child .products__link:hover:before, .products__item-menu:first-child .products__link:focus:before {
+.products__item-menu:first-child .products-menu__link:hover:before, .products__item-menu:first-child .products-menu__link:focus:before {
   transform: scale(0);
 }
 
-.products__item-menu:not(:last-child) {
-  margin-right: 39px;
-}
-
-.products__list {
+.products-list {
   margin-bottom: 112px;
 }
-
-.products__item {
+.products-list__item {
   display: flex;
   align-items: center;
 }
-.products__item:not(:last-child) {
+.products-list__item:not(:last-child) {
   margin-bottom: 33px;
 }
 
@@ -415,7 +413,7 @@ body {
   margin-right: 87px;
 }
 
-.products__title-list {
+.product-description__title {
   font-family: "Hind Madurai";
   font-weight: 700;
   font-size: 26px;
@@ -423,16 +421,14 @@ body {
   color: #000000;
   margin-bottom: 11px;
 }
-
-.products__text {
+.product-description__text {
   color: #4d4d4d;
   font-weight: 500;
   line-height: 1.5;
   width: 454px;
   margin-bottom: 28px;
 }
-
-.products__price {
+.product-description__price {
   font-family: "Hind Madurai";
   font-weight: 500;
   font-size: 26px;
@@ -440,8 +436,7 @@ body {
   color: #000000;
   margin-bottom: 16px;
 }
-
-.products__old-price {
+.product-description__old-price {
   font-family: "Hind Madurai";
   font-weight: 500;
   font-size: 20px;
@@ -451,13 +446,12 @@ body {
   opacity: 0.7;
   margin-left: 5px;
 }
-
-.products__button {
+.product-description__button {
   border-radius: 5px;
   border: transparent;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
 }
-.products__button:hover, .products__button:focus {
+.product-description__button:hover, .product-description__button:focus {
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
   background-color: #d64360;
 }
@@ -609,31 +603,43 @@ article label {
 .simple-way__img {
   margin-right: 134px;
 }
-.simple-way__content {
+
+.content__container {
   width: 607px;
 }
-.simple-way__title {
+.content__title {
   color: #000000;
   font-weight: 500;
   font-size: 44.2px;
   line-height: 1.18;
   margin-bottom: 20px;
 }
-.simple-way__text {
+.content__text {
   color: #554949;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
   margin-bottom: 31px;
 }
-.simple-way__choice-item:not(:last-child) {
+
+.choice-list {
+  margin-bottom: 41px;
+}
+.choice-list__item:not(:last-child) {
   margin-bottom: 19px;
 }
-.simple-way__choice-link {
+.choice-list__link {
   display: flex;
   align-items: center;
 }
-.simple-way__choice-icon {
+.choice-list__text {
+  color: black;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.18;
+}
+
+.choice-icon {
   width: 30px;
   height: 30px;
   border-radius: 3px;
@@ -643,22 +649,14 @@ article label {
   justify-content: center;
   margin-right: 10px;
 }
-.simple-way__choice-text {
-  color: black;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 1.18;
-}
-.simple-way__choice {
-  margin-bottom: 41px;
-}
-.simple-way__apps-list {
+
+.apps-list {
   display: flex;
   align-items: center;
   position: relative;
   left: -11px;
 }
-.simple-way__apps-item + .simple-way__apps-item {
+.apps-list__item + .apps-list__item {
   margin-left: 7px;
 }
 
@@ -677,13 +675,14 @@ article label {
   margin-left: auto;
   margin-right: auto;
 }
-.question__form {
+
+.question-form {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
-.question__textarea {
+.question-form__textarea {
   background-color: #fafafa;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -696,7 +695,7 @@ article label {
   resize: none;
   padding-top: 29px;
 }
-.question__textarea::placeholder {
+.question-form__textarea::placeholder {
   color: #b5b4b4;
   font-weight: 500;
   font-size: 14px;
@@ -706,10 +705,10 @@ article label {
   top: 50%;
   transform: translateY(-50%);
 }
-.question__textarea:hover::placeholder, .question__textarea:focus::placeholder {
+.question-form__textarea:hover::placeholder, .question-form__textarea:focus::placeholder {
   color: #6d6464;
 }
-.question__button {
+.question-form__button {
   width: 134px;
   height: 74px;
   font-weight: 500;
@@ -719,7 +718,7 @@ article label {
   border: transparent;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
 }
-.question__button:hover, .question__button:focus {
+.question-form__button:hover, .question-form__button:focus {
   box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
   background-color: #d64360;
 }
@@ -728,16 +727,14 @@ article label {
   padding-bottom: 104px;
   background: #0a0808;
 }
-
 .footer__flex {
   display: flex;
 }
 
-.footer__about-container {
+.about__container {
   margin-top: 70px;
 }
-
-.footer__text {
+.about__text {
   color: #b5b4b4;
   font-weight: 500;
   font-size: 12px;
@@ -746,8 +743,7 @@ article label {
   max-width: 207px;
   margin-top: 9px;
 }
-
-.footer__social-title {
+.about__social-title {
   color: #ffffff;
   font-weight: 500;
   font-size: 12px;
@@ -755,19 +751,17 @@ article label {
   margin-bottom: 8px;
 }
 
-.footer__social-list {
+.social__list {
   display: flex;
 }
-
-.footer__social-item:not(:last-child) {
+.social__list__item:not(:last-child) {
   margin-right: 10px;
 }
-
-.footer__social-icon {
+.social__list__icon {
   position: relative;
   transition: background-color 200ms linear;
 }
-.footer__social-icon::after {
+.social__list__icon::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -777,51 +771,49 @@ article label {
   left: 0;
   background-color: rgba(0, 0, 0, 0);
 }
-.footer__social-icon:hover::after, .footer__social-icon:focus::after {
+.social__list__icon:hover::after, .social__list__icon:focus::after {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.footer__orientate-container {
+.footer-orientate__container {
   margin-left: 37px;
   margin-top: 143px;
 }
 
-.footer__orientate-item:not(:last-child), .footer__information-item:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.footer__information-container {
+.footer-information__container {
   margin-left: 132px;
   margin-top: 150px;
 }
 
-.footer__link {
+.orientate-item:not(:last-child), .information-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.text-link {
   color: #b5b4b4;
   font-size: 12px;
   line-height: 1.17;
   transition: color 200ms linear;
 }
-.footer__link:hover, .footer__link:focus {
+.text-link:hover, .text-link:focus {
   color: #ffffff;
 }
 
-.footer__subscription-container {
+.subscription__container {
   margin-left: 151px;
   margin-top: 136px;
 }
-
-.footer__subscription-title {
+.subscription__title {
   color: #ffffff;
   font-weight: 500;
   line-height: 1.19;
   margin-bottom: 13px;
 }
 
-.footer__form {
+.footer-form {
   display: flex;
 }
-
-.footer__input {
+.footer-form__input {
   border: 2px solid #d23166;
   box-sizing: border-box;
   border-top-left-radius: 5px;
@@ -833,18 +825,17 @@ article label {
   color: #ffffff;
   padding-left: 32px;
 }
-.footer__input::placeholder {
+.footer-form__input::placeholder {
   color: #9d9c9c;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   transition: color 200ms linear;
 }
-.footer__input:hover::placeholder, .footer__input:focus::placeholder {
+.footer-form__input:hover::placeholder, .footer-form__input:focus::placeholder {
   color: #fff;
 }
-
-.footer__button {
+.footer-form__button {
   width: 125px;
   height: 55px;
   font-weight: 500;
@@ -856,7 +847,7 @@ article label {
   transition: color 200ms linear, text-shadow 200ms linear;
   margin-bottom: 2px;
 }
-.footer__button:focus, .footer__button:hover {
+.footer-form__button:focus, .footer-form__button:hover {
   color: #9d9c9c;
   text-shadow: 0.5px 0.5px 0.5px white;
 }
@@ -865,7 +856,6 @@ article label {
   display: flex;
   align-items: center;
 }
-
 .payment-systems__item + .payment-systems__item {
   margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */

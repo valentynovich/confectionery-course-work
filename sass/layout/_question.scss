@@ -1,8 +1,6 @@
-.question {
-        & {
+.question {        
             padding-top: 191px;
-            padding-bottom: 149px;
-        }
+            padding-bottom: 149px;       
         &__title {
             text-align: center;
             color: #000000;
@@ -12,12 +10,14 @@
             margin-left: auto;
             margin-right: auto;
         }
-        &__form {
+    }
+
+.question-form {
             display: flex;
             align-items: center;
             text-align: center;
             justify-content: center;
-        }
+        
         &__textarea {
             background-color: #fafafa;
             border-top-left-radius: 5px;

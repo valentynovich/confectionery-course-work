@@ -1,12 +1,13 @@
 .potd {
-        & {
-            background: #f8edf0;
-        }
+        background: #f8edf0;      
         &__flex {
             display: flex;
             align-items: center;
-        }
-        &__description-container {
+        }}
+
+
+.description {
+        &__container {
             max-width: 445px;
             margin-top: 141px;
             margin-bottom: 146px;
@@ -27,32 +28,33 @@
             padding-top: 15.04px;
             margin-top: 35px;
             border-radius: 5px;
-            box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-        
+            box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);        
             &:hover,
             &:focus {
                 box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
                 background-color: $background-btn-hover;
             }
+        } 
+    }
+
+
+
+.image-in-section {
+        height: 500px;
+        margin-left: 74px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        &::after {
+            content: "";
+            background-color: #edb5c7;
+            width: 240px;
+            height: 20px;
+            filter: blur(15px);
+            display: inline-block;
+            position: absolute;
+            bottom: 40px;
+            left: 210px;
         }
-        &__img {
-            height: 500px;
-            margin-left: 74px;
-            position: relative;
-            display: flex;
-            align-items: center;
-        
-            &::after {
-                content: "";
-                background-color: #edb5c7;
-                width: 240px;
-                height: 20px;
-                filter: blur(15px);
-                display: inline-block;
-                position: absolute;
-                bottom: 40px;
-                left: 210px;
-            }
-        }
-}
+    }
 

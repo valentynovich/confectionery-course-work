@@ -1,15 +1,18 @@
+
 .benefits {
-    & {
-            padding-top: 133px;
-            padding-bottom: 128px;
-            background-color: #fcfcfc;
-        }
-        &__list {
-            display: flex;
-        }
+    padding-top: 133px;
+    padding-bottom: 128px;
+    background-color: #fcfcfc;
+}
+
+
+
+
+.benefits-list { 
+        display: flex; 
         &__item:not(:last-child) {
-            margin-right: 39px;
-        }
+                margin-right: 39px;
+            }
         &__link {
             background-color: #fff;
             border-radius: 7px;
@@ -17,20 +20,13 @@
             display: inline-block;
             padding: 33px 26px 23px 26px;
             transition: border-color $transition-time $cubic-bezier,
-                box-shadow $transition-time $cubic-bezier;
-        
+                box-shadow $transition-time $cubic-bezier;       
             &:hover,
             &:focus {
                 box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.05);
                 border-color: transparent;
             }
-        }
-        &__icon-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 25px;
-        }
+        }        
         &__title {
             font-family: Hind Madurai;
             @include font(20px, 1.4, 600);          
@@ -43,6 +39,13 @@
             @include font(14px, 1.38);       
             text-align: center;
             color: #666666;
-        }
+        }                
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
 }
 
