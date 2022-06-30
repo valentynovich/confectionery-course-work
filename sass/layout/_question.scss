@@ -18,7 +18,7 @@
             text-align: center;
             justify-content: center;
         }
-        &__input {
+        &__textarea {
             background-color: #fafafa;
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
@@ -28,18 +28,23 @@
             border: transparent;
             padding-left: 30px;
             color: #6d6464;
+            resize: none; 
+            padding-top: 29px;         
         
             &::placeholder {
                 color: #b5b4b4;
                 @include font(14px, 1.14);
                 transition: color $transition-time $cubic-bezier;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
             }
         
             &:hover,
             &:focus {
                 &::placeholder {
-                    color: #6d6464;
-                }}
+                    color: #6d6464;                    
+                }}         
         }
         &__button {                       
             width: 134px;
