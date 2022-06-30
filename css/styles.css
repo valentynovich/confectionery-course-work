@@ -25,6 +25,11 @@ h6 {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 1600px;
   padding-left: 220px;
@@ -34,8 +39,6 @@ h6 {
 
 .list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .link {
@@ -44,6 +47,10 @@ h6 {
 
 img {
   display: block;
+}
+
+button {
+  cursor: pointer;
 }
 
 .button {
@@ -59,7 +66,6 @@ img {
   display: block;
   user-select: none;
   text-align: center;
-  cursor: pointer;
   transition: background-color var(--transition-time) var(--cubic-bezier),
     box-shadow var(--transition-time) var(--cubic-bezier);
 }
@@ -68,13 +74,15 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.15;
-  line-break: 3em;
 }
 
 /* -------header------- */
 
 .header {
   background-color: var(--background-header-hero);
+}
+
+.header__flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,28 +111,25 @@ img {
   transition: color var(--transition-time) var(--cubic-bezier);
 }
 
-/* .header-link::before {
-  content: "";
-  display: inline-block;
-
-  width: 100%;
-  height: 3px;
-  background-color: #d23166;
-  position: absolute;
-  top: 101%;
-  right: 0px;
-  transform: scale(0);
-  transition: transform 250ms linear;
-}
-
-.header-link:hover::before,
-.header-link:focus::before {
-  transform: scale(1);
-} */
-
 .header__link:hover,
 .header__link:focus {
   color: var(--heder-color-menu-hover);
+}
+
+.header__link--curent {
+  color: var(--heder-color-menu-hover);
+  position: relative;
+}
+
+.header__link--curent::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--heder-color-menu-hover);
+  position: absolute;
+  top: 101%;
+  right: 0px;
 }
 
 .header__item:not(:last-child) {
@@ -145,27 +150,14 @@ img {
   background-color: var(--background-btn-hover);
 }
 
-.header__link--curent {
-  color: var(--heder-color-menu-hover);
-  position: relative;
-}
-
-.header__link--curent::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 3px;
-  background-color: var(--heder-color-menu-hover);
-  position: absolute;
-  top: 101%;
-  right: 0px;
-}
-
 /* -------hero------- */
 
 .hero {
-  display: flex;
   background-color: var(--background-header-hero);
+}
+
+.hero__flex {
+  display: flex;
 }
 
 .hero__text-container {
@@ -342,9 +334,12 @@ img {
 /* ------product-of-the-day----- */
 
 .potd {
+  background: #f8edf0;
+}
+
+.potd__flex {
   display: flex;
   align-items: center;
-  background: #f8edf0;
 }
 
 .potd__description-container {
@@ -420,14 +415,6 @@ img {
   text-align: center;
 }
 
-/* .our-product-title::after {
-  content: "";
-  width: 100px;
-  height: 100px;
-  color: #4d4d4d;
-  display: block;
-} */
-
 .products__list-menu {
   display: flex;
   justify-content: center;
@@ -474,6 +461,10 @@ img {
   transform: scale(1);
 }
 
+.products__link--curent {
+  color: #000000;
+}
+
 .products__item-menu:first-child > .products__link:hover::before,
 .products__item-menu:first-child > .products__link:focus::before {
   transform: scale(0);
@@ -509,10 +500,6 @@ img {
 } */
 
 /* конец эксперимента с анимацией*/
-
-.products__link--curent {
-  color: #000000;
-}
 
 .products__list {
   margin-bottom: 112px;
@@ -735,6 +722,10 @@ article label {
   display: flex;
 }
 
+.simple-way__flex {
+  display: flex;
+}
+
 .simple-way__img {
   margin-right: 134px;
 }
@@ -841,8 +832,6 @@ article label {
 
 .question__input::placeholder {
   color: #b5b4b4;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -872,8 +861,11 @@ article label {
 
 .footer {
   padding-bottom: 104px;
-  display: flex;
   background: #0a0808;
+}
+
+.footer__flex {
+  display: flex;
 }
 
 .footer__about-container {

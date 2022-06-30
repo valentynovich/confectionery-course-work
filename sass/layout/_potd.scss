@@ -1,0 +1,62 @@
+.potd {
+        & {
+            background: #f8edf0;
+        }
+        &__flex {
+            display: flex;
+            align-items: center;
+        }
+        &__description-container {
+            max-width: 445px;
+            margin-top: 141px;
+            margin-bottom: 146px;
+        }
+        &__title {
+            font-family: Hind Madurai;
+            font-weight: 600;
+            font-size: 44.2px;
+            line-height: 1.11;
+            color: #150101;
+            margin-bottom: 16px;
+            /* margin-top: 141px; */
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #705f60;
+        }
+        &__button {
+            @extend %button;
+            padding-top: 15.04px;
+            margin-top: 35px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+        
+            &:hover,
+            &:focus {
+                box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
+                background-color: $background-btn-hover;
+            }
+        }
+        &__img {
+            height: 500px;
+            margin-left: 74px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        
+            &::after {
+                content: "";
+                background-color: #edb5c7;
+                width: 240px;
+                height: 20px;
+                filter: blur(15px);
+                display: inline-block;
+                position: absolute;
+                bottom: 40px;
+                left: 210px;
+            }
+        }
+}
+

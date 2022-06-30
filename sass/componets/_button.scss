@@ -1,0 +1,22 @@
+%button {
+    font-family: "Hind Madurai";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: 0.04em;
+    color: #fafafa;
+    background: $background-btn;
+    width: $width-btn;
+    height: $heigth-btn;
+    display: block;
+    user-select: none;
+    text-align: center;
+    transition: background-color $transition-time $cubic-bezier,
+        box-shadow $transition-time $cubic-bezier;
+}
+
+%button-plus {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.15;
+}

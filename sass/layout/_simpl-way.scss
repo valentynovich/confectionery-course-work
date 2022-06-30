@@ -1,0 +1,68 @@
+.simple-way {
+        & {
+            background-color: #f8edf0;
+            padding-top: 90px;
+            padding-bottom: 150px;
+            display: flex;
+        }
+        &__flex {
+            display: flex;
+        }
+        &__img {
+            margin-right: 134px;
+        }
+        &__content {
+            width: 607px;
+        }
+        &__title {
+            font-weight: 500;
+            font-size: 44.2px;
+            line-height: 1.18;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        &__text {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.17;
+            color: #554949;
+            margin-bottom: 31px;
+        }
+        &__choice-item:not(:last-child) {
+            margin-bottom: 19px;
+        }
+        &__choice-link {
+            display: flex;
+            align-items: center;
+        }
+        &__choice-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        &__choice-text {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 1.18;
+            color: black;
+        }
+        &__choice {
+            margin-bottom: 41px;
+        }
+        &__apps-list {
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -11px;
+        }
+        &__apps-item {
+            &+& {
+                margin-left: 7px;
+            }
+        }
+}

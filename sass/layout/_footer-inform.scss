@@ -1,0 +1,32 @@
+.footer__orientate-container {
+    margin-left: 37px;
+    margin-top: 143px;
+}
+
+.footer__orientate-item, .footer__information-item {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }   
+}
+
+
+
+
+.footer__information-container {
+    margin-left: 132px;
+    margin-top: 150px;
+}
+
+
+
+.footer__link {
+    color: $footer-text;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    transition: color $transition-time $cubic-bezier;
+    &:hover, &:focus {
+            color: #ffffff;
+        }
+}
+

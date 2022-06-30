@@ -1,0 +1,42 @@
+.hero__img-container {
+    margin-left: 30px;
+    width: 597px;
+    height: 580px;
+}
+
+.hero__img {
+    background-image: url(../images/milk-icecream-hero.png),
+        url(../images/icecream-hero.png);
+    background-position: bottom -120px left -150px, center;
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    width: 597px;
+    height: 650px;
+    bottom: 10px;
+    left: -115px;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.hero__img-circle {
+    /* content: ""; */
+    position: relative;
+    width: 365px;
+    height: 353px;
+    border-radius: 50%;
+    background-color: #f8dee6;
+    bottom: -330px;
+    left: 55px;
+    display: inline-block;
+    &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 165px;
+            height: 20px;
+            left: 90px;
+            bottom: -40px;
+            background: #edb5c7;
+            filter: blur(17px);
+        }
+}

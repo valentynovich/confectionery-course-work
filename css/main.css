@@ -1,0 +1,872 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 1600px;
+  padding-left: 220px;
+  padding-right: 220px;
+  margin: 0 auto;
+}
+
+.footer__button, .question__button, .products__button, .potd__button, .hero__button, .header__button {
+  font-family: "Hind Madurai";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.04em;
+  color: #fafafa;
+  background: #d23166;
+  width: 165px;
+  height: 49px;
+  display: block;
+  user-select: none;
+  text-align: center;
+  transition: background-color 200ms linear, box-shadow 200ms linear;
+}
+
+.footer__button, .question__button {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.header {
+  background-color: #fcf1f4;
+}
+
+.header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heager__logo {
+  margin-top: 10px;
+}
+
+.header__navigation {
+  align-items: center;
+  display: flex;
+  margin-top: 25px;
+}
+
+.header__list {
+  align-items: center;
+  display: flex;
+}
+
+.header__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #726163;
+  transition: color transition-time cubic-bezier;
+}
+.header__link:hover, .header__link:focus {
+  color: heder-color-menu-hover;
+}
+.header__link--curent {
+  color: heder-color-menu-hover;
+  position: relative;
+}
+.header__link--curent::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background-color: heder-color-menu-hover;
+  position: absolute;
+  top: 101%;
+  right: 0px;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header__button {
+  margin-left: 172px;
+  margin-top: 25px;
+  border-radius: 5px;
+  padding-top: 14px;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.header__button:hover, .header__button:focus {
+  box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
+  background-color: #d64360;
+}
+
+.hero {
+  background-color: #fcf1f4;
+}
+
+.hero__flex {
+  display: flex;
+}
+
+.hero__text-container {
+  max-width: 665px;
+  margin-top: 197px;
+  margin-bottom: 213px;
+}
+
+.hero__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #0f0101;
+  margin-bottom: 6px;
+}
+
+.hero__call-to-action {
+  font-family: "Fredoka One";
+  font-weight: 500;
+  font-size: 57.33px;
+  line-height: 120.5%;
+  color: #27191a;
+  margin-bottom: 35px;
+  display: block;
+}
+
+.hero__call-to-action--span {
+  color: #d64574;
+}
+
+.hero__text {
+  font-family: "Hind Madurai";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #6e6163;
+  margin-bottom: 50px;
+  padding-right: 140px;
+}
+
+.hero__button {
+  border-radius: 5px;
+  padding-top: 13px;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.hero__button::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
+  transition: opasity 200ms linear;
+}
+.hero__button:hover, .hero__button:focus {
+  background-color: background-btn-hover;
+  box-shadow: none;
+}
+.hero__button:hover::after, .hero__button:focus::after {
+  opacity: 1;
+}
+
+.hero__img-container {
+  margin-left: 30px;
+  width: 597px;
+  height: 580px;
+}
+
+.hero__img {
+  background-image: url(../images/milk-icecream-hero.png), url(../images/icecream-hero.png);
+  background-position: bottom -120px left -150px, center;
+  background-repeat: no-repeat;
+  background-size: auto, auto;
+  width: 597px;
+  height: 650px;
+  bottom: 10px;
+  left: -115px;
+  position: absolute;
+  /* z-index: 5; */
+}
+
+.hero__img-circle {
+  /* content: ""; */
+  position: relative;
+  width: 365px;
+  height: 353px;
+  border-radius: 50%;
+  background-color: #f8dee6;
+  bottom: -330px;
+  left: 55px;
+  display: inline-block;
+}
+.hero__img-circle::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 165px;
+  height: 20px;
+  left: 90px;
+  bottom: -40px;
+  background: #edb5c7;
+  filter: blur(17px);
+}
+
+.benefits {
+  padding-top: 133px;
+  padding-bottom: 128px;
+  background-color: #fcfcfc;
+}
+.benefits__list {
+  display: flex;
+}
+.benefits__item:not(:last-child) {
+  margin-right: 39px;
+}
+.benefits__link {
+  background-color: #fff;
+  border-radius: 7px;
+  border: 1px solid #f7f7f7;
+  display: inline-block;
+  padding: 33px 26px 23px 26px;
+  transition: border-color 200ms linear, box-shadow 200ms linear;
+}
+.benefits__link:hover, .benefits__link:focus {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.05);
+  border-color: transparent;
+}
+.benefits__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.benefits__title {
+  font-family: Hind Madurai;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #000000;
+  margin-bottom: 9px;
+  text-align: center;
+}
+.benefits__text {
+  font-family: Hind Madurai;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.38;
+  text-align: center;
+  color: #666666;
+}
+
+.potd {
+  background: #f8edf0;
+}
+.potd__flex {
+  display: flex;
+  align-items: center;
+}
+.potd__description-container {
+  max-width: 445px;
+  margin-top: 141px;
+  margin-bottom: 146px;
+}
+.potd__title {
+  font-family: Hind Madurai;
+  font-weight: 600;
+  font-size: 44.2px;
+  line-height: 1.11;
+  color: #150101;
+  margin-bottom: 16px;
+  /* margin-top: 141px; */
+}
+.potd__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #705f60;
+}
+.potd__button {
+  padding-top: 15.04px;
+  margin-top: 35px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.potd__button:hover, .potd__button:focus {
+  box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
+  background-color: #d64360;
+}
+.potd__img {
+  height: 500px;
+  margin-left: 74px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.potd__img::after {
+  content: "";
+  background-color: #edb5c7;
+  width: 240px;
+  height: 20px;
+  filter: blur(15px);
+  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  left: 210px;
+}
+
+.products {
+  padding-top: 137px;
+  padding-bottom: 174px;
+}
+
+.products__title {
+  font-family: "Hind Madurai";
+  font-weight: 600;
+  font-size: 44.2px;
+  line-height: 1.38;
+  color: #150101;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.products__list-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 110px;
+}
+
+.products__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #666666;
+  transition: color 200ms linear;
+  position: relative;
+}
+.products__link::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 101%;
+  right: 0px;
+  transform: scale(0);
+  transition: transform 200ms linear;
+}
+.products__link:hover, .products__link:focus {
+  color: #000000;
+}
+.products__link:hover::before, .products__link:focus::before {
+  transform: scale(1);
+}
+.products__link--curent {
+  color: #000000;
+}
+.products__item-menu:first-child .products__link:hover:before, .products__item-menu:first-child .products__link:focus:before {
+  transform: scale(0);
+}
+
+.products__item-menu:not(:last-child) {
+  margin-right: 39px;
+}
+
+.products__list {
+  margin-bottom: 112px;
+}
+
+.products__item {
+  display: flex;
+  align-items: center;
+}
+.products__item:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.products__img--1 {
+  margin-right: 85px;
+}
+.products__img--2 {
+  margin-left: 84px;
+}
+.products__img--3 {
+  margin-right: 87px;
+}
+
+.products__title-list {
+  font-family: "Hind Madurai";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.39;
+  color: #000000;
+  margin-bottom: 11px;
+}
+
+.products__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4d4d4d;
+  width: 454px;
+  margin-bottom: 28px;
+}
+
+.products__price {
+  font-family: "Hind Madurai";
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.38;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.products__old-price {
+  font-family: "Hind Madurai";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-decoration-line: line-through;
+  color: #000000;
+  opacity: 0.7;
+  margin-left: 5px;
+}
+
+.products__button {
+  border-radius: 5px;
+  border: transparent;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.products__button:hover, .products__button:focus {
+  box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
+  background-color: #d64360;
+}
+
+.reviews {
+  display: flex;
+}
+
+.chocklad-icecream {
+  margin-left: 214px;
+}
+
+.all {
+  width: 345px;
+}
+
+.all input {
+  display: none;
+}
+
+#slider {
+  position: relative;
+  text-align: center;
+  top: 10px;
+  margin: 0 auto;
+}
+
+#slides article {
+  width: 25%;
+  float: left;
+  transition: all 200ms linear;
+}
+
+#slides .image {
+  width: 50%;
+  line-height: 0;
+  /* display: flex; */
+  transition: all 200ms linear;
+}
+
+#overflow {
+  width: 100%;
+  /* height: 75px; */
+  overflow: hidden;
+}
+
+article img {
+  width: 100%;
+}
+
+#desktop:checked ~ #slider {
+  max-width: 400px;
+}
+
+#switch1:checked ~ #controls label:nth-child(4),
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3) {
+  background: url(../images/reviews/Vector.svg) no-repeat;
+  float: right;
+  margin: 0 0 0 -20px;
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
+#switch1:checked ~ #controls label:nth-child(2),
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(1) {
+  background: url(../images/reviews/Vector-left.svg) no-repeat;
+  float: left;
+  margin: 0 -20px 0 0;
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
+article label {
+  cursor: pointer;
+}
+
+#switch1:checked ~ #slides .image {
+  margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image {
+  margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image {
+  margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image {
+  margin-left: -300%;
+}
+
+#controls {
+  margin: -25% 0 0 0;
+  width: 100%;
+  height: 50px;
+}
+
+#controls label {
+  transition: all 200ms linear;
+}
+
+#controls label:hover {
+  opacity: 0.6;
+}
+
+#active label {
+  border-radius: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #bbb;
+  transition: all 200ms linear;
+}
+
+#active {
+  margin: 23% 0 0;
+  text-align: center;
+}
+
+#active label:hover {
+  background: #76c8ff;
+  border-color: #777;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4) {
+  background: #18a3dd;
+  border-color: #18a3dd;
+}
+
+.simple-way {
+  background-color: #f8edf0;
+  padding-top: 90px;
+  padding-bottom: 150px;
+  display: flex;
+}
+.simple-way__flex {
+  display: flex;
+}
+.simple-way__img {
+  margin-right: 134px;
+}
+.simple-way__content {
+  width: 607px;
+}
+.simple-way__title {
+  font-weight: 500;
+  font-size: 44.2px;
+  line-height: 1.18;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.simple-way__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #554949;
+  margin-bottom: 31px;
+}
+.simple-way__choice-item:not(:last-child) {
+  margin-bottom: 19px;
+}
+.simple-way__choice-link {
+  display: flex;
+  align-items: center;
+}
+.simple-way__choice-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.simple-way__choice-text {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.18;
+  color: black;
+}
+.simple-way__choice {
+  margin-bottom: 41px;
+}
+.simple-way__apps-list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -11px;
+}
+.simple-way__apps-item + .simple-way__apps-item {
+  margin-left: 7px;
+}
+
+.question {
+  padding-top: 191px;
+  padding-bottom: 149px;
+}
+.question__title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.18;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 28px;
+  width: 522px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.question__form {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.question__input {
+  background-color: #fafafa;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  width: 508px;
+  height: 74px;
+  border: transparent;
+  padding-left: 30px;
+  color: #6d6464;
+}
+.question__input::placeholder {
+  color: #b5b4b4;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  transition: color 200ms linear;
+}
+.question__input:hover::placeholder, .question__input:focus::placeholder {
+  color: #6d6464;
+}
+.question__button {
+  width: 134px;
+  height: 74px;
+  border-radius: 5px;
+  border: transparent;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.question__button:hover, .question__button:focus {
+  box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
+  background-color: #d64360;
+}
+
+.footer {
+  padding-bottom: 104px;
+  background: #0a0808;
+}
+
+.footer__flex {
+  display: flex;
+}
+
+.footer__about-container {
+  margin-top: 70px;
+}
+
+.footer__text {
+  color: #b5b4b4;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.42;
+  margin-bottom: 25px;
+  max-width: 207px;
+  margin-top: 9px;
+}
+
+.footer__social-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.footer__social-list {
+  display: flex;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__social-icon {
+  position: relative;
+  transition: background-color 200ms linear;
+}
+.footer__social-icon::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.footer__social-icon:hover::after, .footer__social-icon:focus::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer__orientate-container {
+  margin-left: 37px;
+  margin-top: 143px;
+}
+
+.footer__orientate-item:not(:last-child), .footer__information-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer__information-container {
+  margin-left: 132px;
+  margin-top: 150px;
+}
+
+.footer__link {
+  color: #b5b4b4;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  transition: color 200ms linear;
+}
+.footer__link:hover, .footer__link:focus {
+  color: #ffffff;
+}
+
+.footer__subscription-container {
+  margin-left: 151px;
+  margin-top: 136px;
+}
+
+.footer__subscription-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #ffffff;
+  margin-bottom: 13px;
+}
+
+.footer__form {
+  display: flex;
+}
+
+.footer__input {
+  border: 2px solid #d23166;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  background-color: #0a0808;
+  width: 270;
+  height: 55px;
+  color: #ffffff;
+  padding-left: 32px;
+}
+.footer__input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #9d9c9c;
+  transition: color 200ms linear;
+}
+.footer__input:hover::placeholder, .footer__input:focus::placeholder {
+  color: #fff;
+}
+
+.footer__button {
+  width: 125px;
+  height: 55px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: transparent;
+  transition: color 200ms linear, text-shadow 200ms linear;
+  margin-bottom: 2px;
+}
+.footer__button:focus, .footer__button:hover {
+  color: #9d9c9c;
+  text-shadow: 0.5px 0.5px 0.5px white;
+}
+
+.payment-systems__list {
+  display: flex;
+  align-items: center;
+}
+
+.payment-systems__item + .payment-systems__item {
+  margin-left: 10px;
+}/*# sourceMappingURL=main.css.map */
