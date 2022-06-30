@@ -58,7 +58,7 @@
     }
 
     &:hover, &:focus {
-            background-color: background-btn-hover;
+            background-color: $background-btn-hover;
             box-shadow: none;
             &::after {
                     opacity: 1;

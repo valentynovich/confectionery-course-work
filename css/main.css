@@ -92,13 +92,13 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: #726163;
-  transition: color transition-time cubic-bezier;
+  transition: color 200ms linear;
 }
 .header__link:hover, .header__link:focus {
-  color: heder-color-menu-hover;
+  color: #d23166;
 }
 .header__link--curent {
-  color: heder-color-menu-hover;
+  color: #d23166;
   position: relative;
 }
 .header__link--curent::after {
@@ -106,7 +106,7 @@ body {
   display: inline-block;
   width: 100%;
   height: 3px;
-  background-color: heder-color-menu-hover;
+  background-color: #d23166;
   position: absolute;
   top: 101%;
   right: 0px;
@@ -192,7 +192,7 @@ body {
   transition: opasity 200ms linear;
 }
 .hero__button:hover, .hero__button:focus {
-  background-color: background-btn-hover;
+  background-color: #d64360;
   box-shadow: none;
 }
 .hero__button:hover::after, .hero__button:focus::after {
