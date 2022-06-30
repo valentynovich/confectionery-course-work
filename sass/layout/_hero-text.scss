@@ -7,18 +7,17 @@
 }
 
 .hero__title {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     color: #0f0101;
+    @include font(14px, 1.14);
     margin-bottom: 6px;
 }
 
 .hero__call-to-action {
     font-family: "Fredoka One";
-    font-weight: 500;
-    font-size: 57.33px;
-    line-height: 120.5%;
+    @include font(57.33px, 1.205);
+    // font-weight: 500;
+    // font-size: 57.33px;
+    // line-height: 120.5%;
     color: #27191a;
     margin-bottom: 35px;
     display: block;
@@ -30,9 +29,7 @@
 
 .hero__text {
     font-family: "Hind Madurai";
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.5;
+    @include font(18px, 1.5);
     color: #6e6163;
     margin-bottom: 50px;
     padding-right: 140px;

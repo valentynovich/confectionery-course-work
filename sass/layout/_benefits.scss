@@ -33,18 +33,14 @@
         }
         &__title {
             font-family: Hind Madurai;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 1.4;
+            @include font(20px, 1.4, 600);          
             color: #000000;
             margin-bottom: 9px;
             text-align: center;
         }
         &__text {
             font-family: Hind Madurai;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.38;
+            @include font(14px, 1.38);       
             text-align: center;
             color: #666666;
         }

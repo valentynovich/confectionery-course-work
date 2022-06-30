@@ -43,7 +43,6 @@ body {
 .footer__button, .question__button, .products__button, .potd__button, .hero__button, .header__button {
   font-family: "Hind Madurai";
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.38;
   letter-spacing: 0.04em;
   color: #fafafa;
@@ -54,12 +53,6 @@ body {
   user-select: none;
   text-align: center;
   transition: background-color 200ms linear, box-shadow 200ms linear;
-}
-
-.footer__button, .question__button {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.15;
 }
 
 .header {
@@ -88,10 +81,10 @@ body {
 }
 
 .header__link {
+  color: #726163;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: #726163;
   transition: color 200ms linear;
 }
 .header__link:hover, .header__link:focus {
@@ -143,10 +136,10 @@ body {
 }
 
 .hero__title {
+  color: #0f0101;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: #0f0101;
   margin-bottom: 6px;
 }
 
@@ -154,7 +147,7 @@ body {
   font-family: "Fredoka One";
   font-weight: 500;
   font-size: 57.33px;
-  line-height: 120.5%;
+  line-height: 1.205;
   color: #27191a;
   margin-bottom: 35px;
   display: block;
@@ -310,10 +303,8 @@ body {
   /* margin-top: 141px; */
 }
 .potd__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   color: #705f60;
+  line-height: 1.5;
 }
 .potd__button {
   padding-top: 15.04px;
@@ -366,10 +357,10 @@ body {
 }
 
 .products__link {
+  color: #666666;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
-  color: #666666;
   transition: color 200ms linear;
   position: relative;
 }
@@ -434,10 +425,9 @@ body {
 }
 
 .products__text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   color: #4d4d4d;
+  font-weight: 500;
+  line-height: 1.5;
   width: 454px;
   margin-bottom: 28px;
 }
@@ -623,17 +613,17 @@ article label {
   width: 607px;
 }
 .simple-way__title {
+  color: #000000;
   font-weight: 500;
   font-size: 44.2px;
   line-height: 1.18;
-  color: #000000;
   margin-bottom: 20px;
 }
 .simple-way__text {
+  color: #554949;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
-  color: #554949;
   margin-bottom: 31px;
 }
 .simple-way__choice-item:not(:last-child) {
@@ -654,10 +644,10 @@ article label {
   margin-right: 10px;
 }
 .simple-way__choice-text {
+  color: black;
   font-weight: 500;
   font-size: 22px;
   line-height: 1.18;
-  color: black;
 }
 .simple-way__choice {
   margin-bottom: 41px;
@@ -677,11 +667,11 @@ article label {
   padding-bottom: 149px;
 }
 .question__title {
+  text-align: center;
+  color: #000000;
   font-weight: 500;
   font-size: 44px;
   line-height: 1.18;
-  text-align: center;
-  color: #000000;
   margin-bottom: 28px;
   width: 522px;
   margin-left: auto;
@@ -717,6 +707,9 @@ article label {
 .question__button {
   width: 134px;
   height: 74px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
   border-radius: 5px;
   border: transparent;
   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
@@ -750,10 +743,10 @@ article label {
 }
 
 .footer__social-title {
+  color: #ffffff;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
-  color: #ffffff;
   margin-bottom: 8px;
 }
 
@@ -799,7 +792,6 @@ article label {
 
 .footer__link {
   color: #b5b4b4;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   transition: color 200ms linear;
@@ -814,10 +806,9 @@ article label {
 }
 
 .footer__subscription-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
   color: #ffffff;
+  font-weight: 500;
+  line-height: 1.19;
   margin-bottom: 13px;
 }
 
@@ -838,10 +829,10 @@ article label {
   padding-left: 32px;
 }
 .footer__input::placeholder {
+  color: #9d9c9c;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: #9d9c9c;
   transition: color 200ms linear;
 }
 .footer__input:hover::placeholder, .footer__input:focus::placeholder {
@@ -851,6 +842,9 @@ article label {
 .footer__button {
   width: 125px;
   height: 55px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border: transparent;

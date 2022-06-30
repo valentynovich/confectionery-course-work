@@ -21,9 +21,7 @@
 
 .footer__link {
     color: $footer-text;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
+    @include font(12px, 1.17, null);
     transition: color $transition-time $cubic-bezier;
     &:hover, &:focus {
             color: #ffffff;

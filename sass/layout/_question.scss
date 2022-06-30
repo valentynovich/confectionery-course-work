@@ -4,11 +4,9 @@
             padding-bottom: 149px;
         }
         &__title {
-            font-weight: 500;
-            font-size: 44px;
-            line-height: 1.18;
             text-align: center;
             color: #000000;
+            @include font(44px, 1.18);
             margin-bottom: 28px;
             width: 522px;
             margin-left: auto;
@@ -33,9 +31,7 @@
         
             &::placeholder {
                 color: #b5b4b4;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 1.14;
+                @include font(14px, 1.14);
                 transition: color $transition-time $cubic-bezier;
             }
         
@@ -45,11 +41,11 @@
                     color: #6d6464;
                 }}
         }
-        &__button {
-            @extend %button-plus;
-            @extend %button;
+        &__button {                       
             width: 134px;
             height: 74px;
+            @extend %button;
+            @include font(20px, 1.15);
             border-radius: 5px;
             border: transparent;
             box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);

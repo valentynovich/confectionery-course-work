@@ -15,17 +15,13 @@
             width: 607px;
         }
         &__title {
-            font-weight: 500;
-            font-size: 44.2px;
-            line-height: 1.18;
             color: #000000;
+            @include font(44.2px, 1.18);
             margin-bottom: 20px;
         }
         &__text {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 1.17;
             color: #554949;
+            @include font(18px, 1.17);
             margin-bottom: 31px;
         }
         &__choice-item:not(:last-child) {
@@ -46,10 +42,8 @@
             margin-right: 10px;
         }
         &__choice-text {
-            font-weight: 500;
-            font-size: 22px;
-            line-height: 1.18;
             color: black;
+            @include font(22px, 1.18);
         }
         &__choice {
             margin-bottom: 41px;

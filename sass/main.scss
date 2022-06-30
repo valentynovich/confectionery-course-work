@@ -1,8 +1,9 @@
 @import "./utils/vars";
+@import "./utils/mixin";
 @import "./base/reset";
 @import "./base/base";
 @import "./componets/container";
-@import "./componets/button";
+@import "./utils/button";
 @import "./layout/header";
 @import "./layout/hero-base";
 @import "./layout/hero-text";

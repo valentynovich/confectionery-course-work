@@ -22,10 +22,8 @@
 // }
 
 .products__link {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.17;
     color: #666666;
+    @include font(18px, 1.17);
     transition: color $transition-time $cubic-bezier;
     position: relative;
 

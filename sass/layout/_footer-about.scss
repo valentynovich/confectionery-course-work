@@ -4,19 +4,15 @@
 
 .footer__text {
     color: $footer-text;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.42;
+    @include font(12px, 1.42);
     margin-bottom: 25px;
     max-width: 207px;
     margin-top: 9px;
 }
 
-.footer__social-title {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.17;
+.footer__social-title { 
     color: #ffffff;
+    @include font(12px, 1.17);
     margin-bottom: 8px;
 }
 

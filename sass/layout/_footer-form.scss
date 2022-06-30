@@ -4,10 +4,8 @@
 }
 
 .footer__subscription-title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
     color: #ffffff;
+    @include font(null, 1.19);
     margin-bottom: 13px;
 }
 
@@ -26,11 +24,9 @@
     height: 55px;
     color: #ffffff;
     padding-left: 32px;
-    &::placeholder {
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
+    &::placeholder {            
             color: #9d9c9c;
+            @include font(14px, 1.14);
             transition: color $transition-time $cubic-bezier;
         }
     &:hover,
@@ -44,10 +40,10 @@
 
 
 .footer__button {
-    @extend %button;
-    @extend %button-plus;
     width: 125px;
     height: 55px;
+    @extend %button;
+    @include font(20px, 1.15);    
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border: transparent;
