@@ -1,764 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ice cream shop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link type="image/x-icon" href="./images/favicon.ico" rel="shortcut icon" />
-    <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@500;600&family=Roboto:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <!-- header -->
 
-    <header class="header">
-      <div class="container header__flex">
-        <a href="" class="heager__logo link"
-          ><img src="./images/logo-polar.png" alt="" width="79" height="79"
-        /></a>
-        <nav class="site__navigation">
-          <ul class="list site-list">
-            <li class="site-list__item">
-              <a
-                href=""
-                class="link site-list__link site-list__link--curent"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Home</a
-              >
-            </li>
-            <li class="site-list__item">
-              <a
-                href=""
-                class="link site-list__link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Product</a
-              >
-            </li>
-            <li class="site-list__item">
-              <a
-                href=""
-                class="link site-list__link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Pricing</a
-              >
-            </li>
-            <li class="site-list__item">
-              <a
-                href=""
-                class="link site-list__link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Testimonials</a
-              >
-            </li>
-            <li class="site-list__item">
-              <a
-                href=""
-                class="link site-list__link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <a
-          href=""
-          class="header__button link"
-          type="_blank"
-          rel="noopener noreferrer"
-          >Buy Now</a
-        >
-        <!-- <button type="button" class="header-btn">Buy Now</button> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=1600px" />
+  <title>Ice cream shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link type="image/x-icon" href="./images/favicon.ico" rel="shortcut icon" />
+  <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Hind+Madurai:wght@500;600&family=Roboto:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <!-- header -->
+
+  <header class="header">
+    <div class="container header__flex">
+      <a href="" class="heager__logo link"><img src="./images/logo-polar.png" alt="" width="79" height="79" /></a>
+      <nav class="site__navigation">
+        <ul class="list site-list">
+          <li class="site-list__item">
+            <a href="" class="link site-list__link site-list__link--curent" type="_blank"
+              rel="noopener noreferrer">Home</a>
+          </li>
+          <li class="site-list__item">
+            <a href="" class="link site-list__link" type="_blank" rel="noopener noreferrer">Product</a>
+          </li>
+          <li class="site-list__item">
+            <a href="" class="link site-list__link" type="_blank" rel="noopener noreferrer">Pricing</a>
+          </li>
+          <li class="site-list__item">
+            <a href="" class="link site-list__link" type="_blank" rel="noopener noreferrer">Testimonials</a>
+          </li>
+          <li class="site-list__item">
+            <a href="" class="link site-list__link" type="_blank" rel="noopener noreferrer">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="" class="header__button link" type="_blank" rel="noopener noreferrer">Buy Now</a>
+      <!-- <button type="button" class="header-btn">Buy Now</button> -->
+    </div>
+  </header>
+  <main>
+    <!-- hero -->
+
+    <section class="hero">
+      <div class="container hero__flex">
+        <div class="hero__text-container">
+          <h1 class="hero__title">Sweet fun, full of milk.</h1>
+          <b class="hero__call-to-action">
+            Feel inside cold with our delicious
+            <span class="hero__call-to-action--span">ice-cream.</span>
+          </b>
+          <p class="hero__text">
+            Some food has looked so awful that it's looked like something that
+            the dog's brought home, yet after one mouthful I've been left
+            eating my thoughts, my words.
+          </p>
+          <a href="" class="hero__button link">Buy Now</a>
+          <!-- <button type="button" class="btn-hero">Buy Now</button> -->
+        </div>
+        <div class="hero__img-container">
+          <div class="hero__img-circle">
+            <div class="hero__img"></div>
+          </div>
+        </div>
       </div>
-    </header>
-    <main>
-      <!-- hero -->
+    </section>
 
-      <section class="hero">
-        <div class="container hero__flex">
-          <div class="hero__text-container">
-            <h1 class="hero__title">Sweet fun, full of milk.</h1>
-            <b class="hero__call-to-action">
-              Feel inside cold with our delicious
-              <span class="hero__call-to-action--span">ice-cream.</span>
-            </b>
-            <p class="hero__text">
-              Some food has looked so awful that it's looked like something that
-              the dog's brought home, yet after one mouthful I've been left
-              eating my thoughts, my words.
-            </p>
-            <a href="" class="hero__button link">Buy Now</a>
-            <!-- <button type="button" class="btn-hero">Buy Now</button> -->
-          </div>
-          <div class="hero__img-container">
-            <div class="hero__img-circle">
-              <div class="hero__img"></div>
+    <!-- benefits -->
+
+    <section class="benefits">
+      <div class="container">
+        <ul class="benefits-list list">
+          <li class="benefits-list__item">
+            <a href="" class="benefits-list__link link" type="_blank" rel="noopener noreferrer">
+              <div class="icon-container">
+                <svg width="51" height="43.35">
+                  <use href="./images/svg/icons.svg#icon-free-shipping"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-list__title">Free Shipping</h3>
+              <p class="benefits-list__text">
+                Last Chance! Free shipping on all orders ends today.
+              </p>
+            </a>
+          </li>
+          <li class="benefits-list__item">
+            <a href="" class="benefits-list__link link" type="_blank" rel="noopener noreferrer">
+              <div class="icon-container">
+                <svg width="32" height="42">
+                  <use href="./images/svg/icons.svg#icon-Quick-Packaging"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-list__title">Quick Packaging</h3>
+              <p class="benefits-list__text">
+                Last Chance! Free shipping on all orders ends today.
+              </p>
+            </a>
+          </li>
+          <li class="benefits-list__item">
+            <a href="" class="benefits-list__link link" type="_blank" rel="noopener noreferrer">
+              <div class="icon-container">
+                <svg width="51" height="43.35">
+                  <use href="./images/svg/icons.svg#icon--Money-Back"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-list__title">100% Money Back</h3>
+              <p class="benefits-list__text">
+                Last Chance! Free shipping on all orders ends today.
+              </p>
+            </a>
+          </li>
+          <li class="benefits-list__item">
+            <a href="" class="benefits-list__link link" type="_blank" rel="noopener noreferrer">
+              <div class="icon-container">
+                <svg class="benefits__icon" width="54" height="54">
+                  <use href="./images/svg/icons.svg#icon-Fast-Delivery"></use>
+                </svg>
+              </div>
+              <h3 class="benefits-list__title">Fast Delivery</h3>
+              <p class="benefits-list__text">
+                Last Chance! Free shipping on all orders ends today.
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- product of the day -->
+
+    <section class="potd">
+      <div class="container potd__flex">
+        <div class="description__container">
+          <h2 class="description__title">
+            Brown Sugar<br />
+            Oatmea
+          </h2>
+          <p class="description__text">
+            Together with McDonald’s, Burger King has grown to become
+            synonymous with burgers in the US.Together with McDonald’s, Burger
+            King has grown to become synonymous.
+          </p>
+          <a href="" class="description__button link" type="_blank" rel="noopener noreferrer">See Details</a>
+        </div>
+        <div class="image-in-section">
+          <img src="./images/icecream-spoon.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- products -->
+
+    <section class="products">
+      <div class="container">
+        <h2 class="products__title">Our Product</h2>
+        <ul class="products-menu__list list">
+          <li class="products-menu__item">
+            <a href="" class="link products-menu__link products-menu__link--curent" type="_blank"
+              rel="noopener noreferrer">ICE CREAM</a>
+          </li>
+          <li class="products-menu__item">
+            <a href="" class="products-menu__link link" type="_blank" rel="noopener noreferrer">CAYENNE CHOCOLATE</a>
+          </li>
+          <li class="products-menu__item">
+            <a href="" class="products-menu__link link" type="_blank" rel="noopener noreferrer">CAKE BATTER</a>
+          </li>
+          <li class="products-menu__item">
+            <a href="" class="products-menu__link link" type="_blank" rel="noopener noreferrer">CANDY CANE</a>
+          </li>
+          <li class="products-menu__item">
+            <a href="" class="products-menu__link link" type="_blank" rel="noopener noreferrer">PLATTERS</a>
+          </li>
+          <li class="products-menu__item">
+            <a href="" class="products-menu__link link" type="_blank" rel="noopener noreferrer">DESSERT</a>
+          </li>
+        </ul>
+        <ul class="products-list list">
+          <li class="products-list__item">
+            <div class="products__img--1">
+              <img src="./images/icecream-pistachios-mint.png" alt="" width="580" height="415" />
             </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- benefits -->
-
-      <section class="benefits">
-        <div class="container">
-          <ul class="benefits-list list">
-            <li class="benefits-list__item">
-              <a
-                href=""
-                class="benefits-list__link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                ><div class="icon-container">
-                  <svg width="51" height="43.35">
-                    <use href="./images/svg/icons.svg#icon-free-shipping"></use>
-                  </svg>
-                </div>
-                <h3 class="benefits-list__title">Free Shipping</h3>
-                <p class="benefits-list__text">
-                  Last Chance! Free shipping on all orders ends today.
-                </p></a
-              >
-            </li>
-            <li class="benefits-list__item">
-              <a
-                href=""
-                class="benefits-list__link link"
-                type="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="icon-container">
-                  <svg width="32" height="42">
-                    <use
-                      href="./images/svg/icons.svg#icon-Quick-Packaging"
-                    ></use>
-                  </svg>
-                </div>
-                <h3 class="benefits-list__title">Quick Packaging</h3>
-                <p class="benefits-list__text">
-                  Last Chance! Free shipping on all orders ends today.
-                </p></a
-              >
-            </li>
-            <li class="benefits-list__item">
-              <a
-                href=""
-                class="benefits-list__link link"
-                type="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="icon-container">
-                  <svg width="51" height="43.35">
-                    <use href="./images/svg/icons.svg#icon--Money-Back"></use>
-                  </svg>
-                </div>
-                <h3 class="benefits-list__title">100% Money Back</h3>
-                <p class="benefits-list__text">
-                  Last Chance! Free shipping on all orders ends today.
-                </p></a
-              >
-            </li>
-            <li class="benefits-list__item">
-              <a
-                href=""
-                class="benefits-list__link link"
-                type="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="icon-container">
-                  <svg class="benefits__icon" width="54" height="54">
-                    <use href="./images/svg/icons.svg#icon-Fast-Delivery"></use>
-                  </svg>
-                </div>
-                <h3 class="benefits-list__title">Fast Delivery</h3>
-                <p class="benefits-list__text">
-                  Last Chance! Free shipping on all orders ends today.
-                </p></a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- product of the day -->
-
-      <section class="potd">
-        <div class="container potd__flex">
-          <div class="description__container">
-            <h2 class="description__title">
-              Brown Sugar<br />
-              Oatmea
-            </h2>
-            <p class="description__text">
-              Together with McDonald’s, Burger King has grown to become
-              synonymous with burgers in the US.Together with McDonald’s, Burger
-              King has grown to become synonymous.
-            </p>
-            <a
-              href=""
-              class="description__button link"
-              type="_blank"
-              rel="noopener noreferrer"
-              >See Details</a
-            >
-          </div>
-          <div class="image-in-section">
-            <img src="./images/icecream-spoon.png" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <!-- products -->
-
-      <section class="products">
-        <div class="container">
-          <h2 class="products__title">Our Product</h2>
-          <ul class="products-menu__list list">
-            <li class="products-menu__item">
-              <a
-                href=""
-                class="link products-menu__link products-menu__link--curent"
-                type="_blank"
-                rel="noopener noreferrer"
-                >ICE CREAM</a
-              >
-            </li>
-            <li class="products-menu__item">
-              <a
-                href=""
-                class="products-menu__link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >CAYENNE CHOCOLATE</a
-              >
-            </li>
-            <li class="products-menu__item">
-              <a
-                href=""
-                class="products-menu__link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >CAKE BATTER</a
-              >
-            </li>
-            <li class="products-menu__item">
-              <a
-                href=""
-                class="products-menu__link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >CANDY CANE</a
-              >
-            </li>
-            <li class="products-menu__item">
-              <a
-                href=""
-                class="products-menu__link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >PLATTERS</a
-              >
-            </li>
-            <li class="products-menu__item">
-              <a
-                href=""
-                class="products-menu__link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >DESSERT</a
-              >
-            </li>
-          </ul>
-          <ul class="products-list list">
-            <li class="products-list__item">
-              <div class="products__img--1">
-                <img
-                  src="./images/icecream-pistachios-mint.png"
-                  alt=""
-                  width="580"
-                  height="415"
-                />
-              </div>
-
-              <div class="product-description__container">
-                <h3 class="product-description__title">Brown bread</h3>
-                <p class="product-description__text">
-                  Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
-                  Pain is a pioneer in the healthy fast food scene.Bon Au Pain
-                  is a pioneer in the healthy fast food scene.
-                </p>
-                <p class="product-description__price">
-                  $19.55
-                  <span class="product-description__old-price">$22.55</span>
-                </p>
-                <button type="button" class="product-description__button">
-                  Buy Now
-                </button>
-              </div>
-            </li>
-            <li class="products-list__item">
-              <div class="product-description__container">
-                <h3 class="product-description__title">Brown bread</h3>
-                <p class="product-description__text">
-                  Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
-                  Pain is a pioneer in the healthy fast food scene.Bon Au Pain
-                  is a pioneer in the healthy fast food scene.
-                </p>
-                <p class="product-description__price">
-                  $19.55
-                  <span class="product-description__old-price">$22.55</span>
-                </p>
-                <button type="button" class="product-description__button">
-                  Buy Now
-                </button>
-              </div>
-              <div class="products__img--2">
-                <img
-                  src="./images/icecream-yellow.png"
-                  alt=""
-                  width="580"
-                  height="415"
-                />
-              </div>
-            </li>
-            <li class="products-list__item">
-              <div class="products__img--3">
-                <img
-                  src="./images/icecream-chockolad.png"
-                  alt=""
-                  width="580"
-                  height="415"
-                />
-              </div>
-              <div class="product-description__container">
-                <h3 class="product-description__title">Brown bread</h3>
-                <p class="product-description__text">
-                  Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
-                  Pain is a pioneer in the healthy fast food scene.Bon Au Pain
-                  is a pioneer in the healthy fast food scene.
-                </p>
-                <p class="product-description__price">
-                  $19.55
-                  <span class="product-description__old-price">$22.55</span>
-                </p>
-                <button type="button" class="product-description__button">
-                  Buy Now
-                </button>
-              </div>
-            </li>
-          </ul>
-          <div class="reviews">
-            <div class="all">
-              <input checked type="radio" name="respond" id="desktop" />
-              <article id="slider">
-                <input checked type="radio" name="slider" id="switch1" />
-                <input type="radio" name="slider" id="switch2" />
-                <input type="radio" name="slider" id="switch3" />
-                <input type="radio" name="slider" id="switch4" />
-                <div id="slides">
-                  <div id="overflow">
-                    <div class="image">
-                      <article>
-                        <img
-                          src="./images/2img1.jpg"
-                          alt=""
-                          width="100"
-                          height="86"
-                        />
-                      </article>
-
-                      <article>
-                        <img
-                          src="./images/2img2.jpg"
-                          alt=""
-                          width="100"
-                          height="86"
-                        />
-                      </article>
-
-                      <article>
-                        <img
-                          src="./images/2img3.jpg"
-                          alt=""
-                          width="100"
-                          height="86"
-                        />
-                      </article>
-
-                      <article>
-                        <img
-                          src="./images/2img4.jpg"
-                          alt=""
-                          width="100"
-                          height="86"
-                        />
-                      </article>
+            <div class="product-description__container">
+              <h3 class="product-description__title">Brown bread</h3>
+              <p class="product-description__text">
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain
+                is a pioneer in the healthy fast food scene.
+              </p>
+              <p class="product-description__price">
+                $19.55
+                <span class="product-description__old-price">$22.55</span>
+              </p>
+              <button type="button" class="product-description__button">
+                Buy Now
+              </button>
+            </div>
+          </li>
+          <li class="products-list__item">
+            <div class="product-description__container">
+              <h3 class="product-description__title">Brown bread</h3>
+              <p class="product-description__text">
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain
+                is a pioneer in the healthy fast food scene.
+              </p>
+              <p class="product-description__price">
+                $19.55
+                <span class="product-description__old-price">$22.55</span>
+              </p>
+              <button type="button" class="product-description__button">
+                Buy Now
+              </button>
+            </div>
+            <div class="products__img--2">
+              <img src="./images/icecream-yellow.png" alt="" width="580" height="415" />
+            </div>
+          </li>
+          <li class="products-list__item">
+            <div class="products__img--3">
+              <img src="./images/icecream-chockolad.png" alt="" width="580" height="415" />
+            </div>
+            <div class="product-description__container">
+              <h3 class="product-description__title">Brown bread</h3>
+              <p class="product-description__text">
+                Bon Au Pain is a pioneer in the healthy fast food scene.Bon Au
+                Pain is a pioneer in the healthy fast food scene.Bon Au Pain
+                is a pioneer in the healthy fast food scene.
+              </p>
+              <p class="product-description__price">
+                $19.55
+                <span class="product-description__old-price">$22.55</span>
+              </p>
+              <button type="button" class="product-description__button">
+                Buy Now
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="reviews">
+          <div class="swipers">
+            <div class="swiper textSwiper">
+              <div class="swiper-wrapper swiper-text">
+                <div class="swiper-slide swiper-slide-text">
+                  <div class="slider-container"><img class="slide-img-text" src="./images/reviews/glory.jpg" alt="">
+                    <div class="slider-content">
+                      <h3 class="slider-title">Adele A. McNeill</h3>
+                      <p class="slider-text">AMIRICAN</p>
                     </div>
                   </div>
+                  <div>
+                    <p class="content-text">Thanks a lot for the prompt service. Really appreciate. Excellence taste in
+                      Every Bite.Add a joy
+                      of best Taste. Foodie Moments.</p>
+                  </div>
                 </div>
-                <div id="controls">
-                  <label for="switch1"></label>
-                  <label for="switch2"></label>
-                  <label for="switch3"></label>
-                  <label for="switch4"></label>
+                <div class="swiper-slide swiper-slide-text">
+                  <div class="slider-container"><img class="slide-img-text" src="./images/reviews/maks.jpg" alt="">
+                    <div class="slider-content">
+                      <h3 class="slider-title">Antonio Marjorna</h3>
+                      <p class="slider-text">ITALIAN</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="content-text">Thanks a lot for the prompt service. Really appreciate. Excellence taste in
+                      Every Bite.Add a joy
+                      of best Taste. Foodie Moments.</p>
+                  </div>
                 </div>
-                <div id="active">
-                  <label for="switch1"></label>
-                  <label for="switch2"></label>
-                  <label for="switch3"></label>
-                  <label for="switch4"></label>
+                <div class="swiper-slide swiper-slide-text">
+                  <div class="slider-container"><img class="slide-img-text" src="./images/reviews/glory.jpg" alt="">
+                    <div class="slider-content">
+                      <h3 class="slider-title">Ahujta Nakubana</h3>
+                      <p class="slider-text">JAPAN</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="content-text">Thanks a lot for the prompt service. Really appreciate. Excellence taste in
+                      Every Bite.Add a joy
+                      of best Taste. Foodie Moments.</p>
+                  </div>
                 </div>
-              </article>
+                <div class="swiper-slide swiper-slide-text">
+                  <div class="slider-container"><img class="slide-img-text" src="./images/reviews/maks.jpg" alt="">
+                    <div class="slider-content">
+                      <h3 class="slider-title">Vasil Petrenko</h3>
+                      <p class="slider-text">UKRAINE</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="content-text">Thanks a lot for the prompt service. Really appreciate. Excellence taste in
+                      Every Bite.Add a joy
+                      of best Taste. Foodie Moments.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="chocklad-icecream">
-              <img
-                src="./images/icecream-three-bolls.png"
-                alt=""
-                width="564"
-                height="442"
-              />
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper swiper-img">
+                <div class="swiper-slide"><img class="slide-img" src="./images/reviews/glory.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img class="slide-img" src="./images/reviews/maks.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img class="slide-img" src="./images/reviews/glory.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img class="slide-img" src="./images/reviews/maks.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-button-next swiper-button-next-padding"></div>
+              <div class="swiper-button-prev swiper-button-prev-padding"></div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- simple-way -->
-
-      <section class="simple-way">
-        <div class="container simple-way__flex">
-          <a
-            href=""
-            class="simple-way__img link"
-            type="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./images/image-order-product.png"
-              alt=""
-              width="305"
-              height="627"
-          /></a>
-          <!-- <div class="simple-way-img"></div> -->
-          <div class="content__container">
-            <h2 class="content__title">Simple Way To Order Your Food</h2>
-            <p class="content__text">
-              Some food has looked so awful that it's looked like something that
-              the dog's brought home, yet after one mouthful I've been left
-              eating my thoughts.
-            </p>
-            <ul class="choice-list list">
-              <li class="choice-list__item">
-                <a
-                  href=""
-                  class="link choice-list__link"
-                  type="_blank"
-                  rel="noopener noreferrer"
-                  ><div class="choice-icon">
-                    <svg width="17" height="23">
-                      <use
-                        href="./images/svg/icons.svg#icon-Select-Your-Food"
-                      ></use>
-                    </svg>
-                  </div>
-                  <p class="choice-list__text">Select Your Food</p></a
-                >
-              </li>
-              <li class="choice-list__item">
-                <a
-                  href=""
-                  class="link choice-list__link"
-                  type="_blank"
-                  rel="noopener noreferrer"
-                  ><div class="choice-icon">
-                    <svg width="15" height="15">
-                      <use href="./images/svg/icons.svg#icon-Add-To-Cart"></use>
-                    </svg>
-                  </div>
-                  <p class="choice-list__text">Add To Cart</p></a
-                >
-              </li>
-              <li class="choice-list__item">
-                <a
-                  href=""
-                  class="link choice-list__link"
-                  type="_blank"
-                  rel="noopener noreferrer"
-                  ><div class="choice-icon">
-                    <svg width="19" height="15.39">
-                      <use
-                        href="./images/svg/icons.svg#icon-Order-Your-Food"
-                      ></use>
-                    </svg>
-                  </div>
-                  <p class="choice-list__text">Order Your Food</p></a
-                >
-              </li>
-            </ul>
-            <ul class="apps-list list">
-              <li class="apps-list__item">
-                <a href="" class="link" type="_blank" rel="noopener noreferrer"
-                  ><img
-                    src="./images/google-play.png"
-                    alt=""
-                    width="200"
-                    height="77"
-                /></a>
-              </li>
-              <li class="apps-list__item">
-                <a href="" class="link" type="_blank" rel="noopener noreferrer"
-                  ><img
-                    src="./images/app-store.png"
-                    alt=""
-                    width="173"
-                    height="88"
-                /></a>
-              </li>
-            </ul>
+          <div class="chocklad-icecream">
+            <img src="./images/icecream-three-bolls.png" alt="" width="564" height="442" />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- question -->
+    <!-- simple-way -->
 
-      <section class="question">
-        <div class="container">
-          <h3 class="question__title">
-            Have Question in Mind? Let us help you
-          </h3>
-          <form action="#" class="question-form">
-            <textarea
-              type="text"
-              class="question-form__textarea"
-              placeholder="Enter your question"
-              name="user-text"
-            ></textarea>
-            <button type="submit" class="question-form__button">Send</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- footer -->
-
-    <footer class="footer">
-      <div class="container footer__flex">
-        <div class="about__container">
-          <a href="" class="link" type="_blank" rel="noopener noreferrer"
-            ><img src="./images/logo-polar.png" alt="" width="79" height="79"
-          /></a>
-          <p class="about__text">
+    <section class="simple-way">
+      <div class="container simple-way__flex">
+        <a href="" class="simple-way__img link" type="_blank" rel="noopener noreferrer">
+          <img src="./images/image-order-product.png" alt="" width="305" height="627" /></a>
+        <!-- <div class="simple-way-img"></div> -->
+        <div class="content__container">
+          <h2 class="content__title">Simple Way To Order Your Food</h2>
+          <p class="content__text">
             Some food has looked so awful that it's looked like something that
-            the dog's brought home.
+            the dog's brought home, yet after one mouthful I've been left
+            eating my thoughts.
           </p>
-          <h3 class="about__social-title">Fllow Us</h3>
-          <ul class="social__list list">
-            <li class="social__item">
-              <a
-                href=""
-                class="social__icon link"
-                type="_blank"
-                rel="noopener noreferrer"
-                ><img src="./images/facebook.png" alt="" width="15" height="15"
-              /></a>
+          <ul class="choice-list list">
+            <li class="choice-list__item">
+              <a href="" class="link choice-list__link" type="_blank" rel="noopener noreferrer">
+                <div class="choice-icon">
+                  <svg width="17" height="23">
+                    <use href="./images/svg/icons.svg#icon-Select-Your-Food"></use>
+                  </svg>
+                </div>
+                <p class="choice-list__text">Select Your Food</p>
+              </a>
             </li>
-            <li class="social__item">
-              <a
-                href=""
-                class="social__icon link"
-                type="_blank"
-                rel="noopener noreferrer"
-                ><img src="./images/twitter.png" alt="" width="15" height="15"
-              /></a>
+            <li class="choice-list__item">
+              <a href="" class="link choice-list__link" type="_blank" rel="noopener noreferrer">
+                <div class="choice-icon">
+                  <svg width="15" height="15">
+                    <use href="./images/svg/icons.svg#icon-Add-To-Cart"></use>
+                  </svg>
+                </div>
+                <p class="choice-list__text">Add To Cart</p>
+              </a>
             </li>
-            <li class="social__item">
-              <a
-                href=""
-                class="link social__icon"
-                type="_blank"
-                rel="noopener noreferrer"
-                ><img
-                  src="./images/instagram.png"
-                  alt=""
-                  width="15"
-                  height="15"
-              /></a>
-            </li>
-            <li class="social__item">
-              <a
-                href=""
-                class="social__icon link"
-                type="_blank"
-                rel="noopener noreferrer"
-                ><img src="./images/linkedin.png" alt="" width="15" height="15"
-              /></a>
+            <li class="choice-list__item">
+              <a href="" class="link choice-list__link" type="_blank" rel="noopener noreferrer">
+                <div class="choice-icon">
+                  <svg width="19" height="15.39">
+                    <use href="./images/svg/icons.svg#icon-Order-Your-Food"></use>
+                  </svg>
+                </div>
+                <p class="choice-list__text">Order Your Food</p>
+              </a>
             </li>
           </ul>
-        </div>
-        <div class="footer-orientate__container">
-          <ul class="list">
-            <li class="orientate-item">
-              <a
-                href=""
-                class="text-link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Home</a
-              >
+          <ul class="apps-list list">
+            <li class="apps-list__item">
+              <a href="" class="link" type="_blank" rel="noopener noreferrer"><img src="./images/google-play.png" alt=""
+                  width="200" height="77" /></a>
             </li>
-            <li class="orientate-item">
-              <a
-                href=""
-                class="text-link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Product</a
-              >
-            </li>
-            <li class="orientate-item">
-              <a
-                href=""
-                class="text-link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Blog</a
-              >
-            </li>
-            <li class="orientate-item">
-              <a
-                href=""
-                class="text-link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Pricing</a
-              >
-            </li>
-            <li class="orientate-item">
-              <a
-                href=""
-                class="text-link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Testimonials</a
-              >
-            </li>
-            <li class="orientate-item">
-              <a
-                href=""
-                class="text-link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="footer-information__container">
-          <ul class="list">
-            <li class="information-item">
-              <a
-                href=""
-                class="text-link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Delivery Information</a
-              >
-            </li>
-            <li class="information-item">
-              <a
-                href=""
-                class="text-link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Privacy Policy</a
-              >
-            </li>
-            <li class="information-item">
-              <a
-                href=""
-                class="text-link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Terms & Condition</a
-              >
-            </li>
-            <li class="information-item">
-              <a
-                href=""
-                class="text-link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Search Terms</a
-              >
-            </li>
-            <li class="information-item">
-              <a
-                href=""
-                class="text-link link"
-                type="_blank"
-                rel="noopener noreferrer"
-                >Order & Return</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="subscription__container">
-          <h1 class="subscription__title">Newsletter</h1>
-          <form action="#" class="footer-form">
-            <input
-              type="email"
-              class="footer-form__input"
-              placeholder="Your Email"
-              name="user-email"
-            />
-            <button type="submit" class="footer-form__button">Subscribe</button>
-          </form>
-          <ul class="payment-systems__list list">
-            <li class="payment-systems__item">
-              <a href="" class="link" type="_blank" rel="noopener noreferrer"
-                ><div>
-                  <svg width="20" height="24">
-                    <use href="./images/svg/icons.svg#icon-PP"></use>
-                  </svg></div
-              ></a>
-            </li>
-            <li class="payment-systems__item">
-              <a href="" class="link" rel="noopener noreferrer" type="_blank"
-                ><div>
-                  <svg class="benefits-icon" width="30" height="33.31">
-                    <use href="./images/svg/icons.svg#icon-MasterCard"></use>
-                  </svg></div
-              ></a>
-            </li>
-            <li class="payment-systems__item">
-              <a href="" class="link"
-                ><div>
-                  <svg width="50" height="50">
-                    <use href="./images/svg/icons.svg#icon-VISA"></use>
-                  </svg></div
-              ></a>
+            <li class="apps-list__item">
+              <a href="" class="link" type="_blank" rel="noopener noreferrer"><img src="./images/app-store.png" alt=""
+                  width="173" height="88" /></a>
             </li>
           </ul>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- question -->
+
+    <section class="question">
+      <div class="container">
+        <h3 class="question__title">
+          Have Question in Mind? Let us help you
+        </h3>
+        <form action="#" class="question-form">
+          <textarea type="text" class="question-form__textarea" placeholder="Enter your question"
+            name="user-text"></textarea>
+          <button type="submit" class="question-form__button">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="container footer__flex">
+      <div class="about__container">
+        <a href="" class="link" type="_blank" rel="noopener noreferrer"><img src="./images/logo-polar.png" alt=""
+            width="79" height="79" /></a>
+        <p class="about__text">
+          Some food has looked so awful that it's looked like something that
+          the dog's brought home.
+        </p>
+        <h3 class="about__social-title">Fllow Us</h3>
+        <ul class="social__list list">
+          <li class="social__item">
+            <a href="" class="social__icon link" type="_blank" rel="noopener noreferrer"><img
+                src="./images/facebook.png" alt="" width="15" height="15" /></a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__icon link" type="_blank" rel="noopener noreferrer"><img src="./images/twitter.png"
+                alt="" width="15" height="15" /></a>
+          </li>
+          <li class="social__item">
+            <a href="" class="link social__icon" type="_blank" rel="noopener noreferrer"><img
+                src="./images/instagram.png" alt="" width="15" height="15" /></a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__icon link" type="_blank" rel="noopener noreferrer"><img
+                src="./images/linkedin.png" alt="" width="15" height="15" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-orientate__container">
+        <ul class="list">
+          <li class="orientate-item">
+            <a href="" class="text-link link" type="_blank" rel="noopener noreferrer">Home</a>
+          </li>
+          <li class="orientate-item">
+            <a href="" class="text-link link" type="_blank" rel="noopener noreferrer">Product</a>
+          </li>
+          <li class="orientate-item">
+            <a href="" class="text-link link" type="_blank" rel="noopener noreferrer">Blog</a>
+          </li>
+          <li class="orientate-item">
+            <a href="" class="text-link link" type="_blank" rel="noopener noreferrer">Pricing</a>
+          </li>
+          <li class="orientate-item">
+            <a href="" class="text-link link" type="_blank" rel="noopener noreferrer">Testimonials</a>
+          </li>
+          <li class="orientate-item">
+            <a href="" class="text-link link" type="_blank" rel="noopener noreferrer">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-information__container">
+        <ul class="list">
+          <li class="information-item">
+            <a href="" class="text-link link" type="_blank" rel="noopener noreferrer">Delivery Information</a>
+          </li>
+          <li class="information-item">
+            <a href="" class="text-link link" type="_blank" rel="noopener noreferrer">Privacy Policy</a>
+          </li>
+          <li class="information-item">
+            <a href="" class="text-link link" type="_blank" rel="noopener noreferrer">Terms & Condition</a>
+          </li>
+          <li class="information-item">
+            <a href="" class="text-link link" type="_blank" rel="noopener noreferrer">Search Terms</a>
+          </li>
+          <li class="information-item">
+            <a href="" class="text-link link" type="_blank" rel="noopener noreferrer">Order & Return</a>
+          </li>
+        </ul>
+      </div>
+      <div class="subscription__container">
+        <h1 class="subscription__title">Newsletter</h1>
+        <form action="#" class="footer-form">
+          <input type="email" class="footer-form__input" placeholder="Your Email" name="user-email" />
+          <button type="submit" class="footer-form__button">Subscribe</button>
+        </form>
+        <ul class="payment-systems__list list">
+          <li class="payment-systems__item">
+            <a href="" class="link" type="_blank" rel="noopener noreferrer">
+              <div>
+                <svg width="20" height="24">
+                  <use href="./images/svg/icons.svg#icon-PP"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="payment-systems__item">
+            <a href="" class="link" rel="noopener noreferrer" type="_blank">
+              <div>
+                <svg class="benefits-icon" width="30" height="33.31">
+                  <use href="./images/svg/icons.svg#icon-MasterCard"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="payment-systems__item">
+            <a href="" class="link">
+              <div>
+                <svg width="50" height="50">
+                  <use href="./images/svg/icons.svg#icon-VISA"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const myImage = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 26,
+      slideActiveClass: "active-slade",
+      centeredSlides: true,
+      initialSlide: 0,
+      effect: "coverflow",
+      coverflowEffect: {
+        scale: 0.7,
+        stretch: 0,
+        slideShadows: false,
+        rotate: 0,
+      },
+      // controller: {
+      //   control: myText
+      // },
+    });
+
+    const myText = new Swiper(".textSwiper", {
+      loop: true,
+      slidesPerView: "auto",
+      spaceBetween: 26,
+      centeredSlides: true,
+      initialSlide: 0,
+      // slideActiveClass: "active-slade-text",
+      // controller: {
+      //   control: myImage
+      // },
+      effect: "coverflow",
+      coverflowEffect: {
+        scale: 0,
+        stretch: 0,
+        slideShadows: false,
+        rotate: 0,
+      },
+    });
+    const swipeAllSliders = (index) => {
+      myText.slideTo(index);
+      myImage.slideTo(index);
+    }
+
+    myText.on('slideChange', () => swipeAllSliders(myText.activeIndex));
+    myImage.on('slideChange', () => swipeAllSliders(myImage.activeIndex));
+
+
+  //   myImage.controller.control = myText;
+  //   myText.controller.control = myImage;
+  </script>
+</body>
+
 </html>
+<!-- var swiper = --запимь перед new swiper-->
+<!-- let myImage = -это переменная слайдера с картинками->

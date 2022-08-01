@@ -1,48 +1,62 @@
 .products-menu {
     &__list {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 110px;
-        }
+        display: flex;
+        justify-content: center;
+        margin-bottom: 110px;
+    }
+
     &__item:not(:last-child) {
-            margin-right: 39px;
+        margin-right: 39px;
+    }
+
+    &__link {
+        color: #666666;
+        @include font(18px, 1.17);
+        transition: color $transition-time $cubic-bezier;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            top: 101%;
+            right: 0px;
+            transform: scale(0);
+            transition: transform $transition-time $cubic-bezier;
         }
-        &__link {
-            color: #666666;
-            @include font(18px, 1.17);
-            transition: color $transition-time $cubic-bezier;
-            position: relative;        
+
+        &:hover,
+        &:focus {
+            color: #000000;
+
             &::before {
-                content: "";
-                display: inline-block;
-                width: 100%;
-                height: 1px;
-                background-color: #000;
-                position: absolute;
-                top: 101%;
-                right: 0px;
-                transform: scale(0);
-                transition: transform $transition-time $cubic-bezier;
-            }        
-            &:hover,
-            &:focus {
-                color: #000000;        
-                &::before {
-                    transform: scale(1);
-                }
-            }        
-            &--curent {
-                color: #000000;
-            }        
-            .products__item-menu:first-child &:hover,
-            .products__item-menu:first-child &:focus {
-                &:before {
-                    transform: scale(0);
-                }
+                transform: scale(1);
             }
-        
         }
+
+        &--curent {
+            color: #000000;
+        }
+
+        .products-menu__item:first-child &:hover,
+        .products-menu__item:first-child &:focus {
+            &::before {
+                transform: scale(0);
+            }
+        }
+
+    }
 }
+
+//   .products__item-menu:first-child .products__link:hover,
+//   .products__item-menu:first-child .products__link:focus {
+//       &::before {
+//           transform: scale(0);
+//       }
+//   }
 
 
 
@@ -62,6 +76,3 @@
 //             transform: scale(0);
 //         }
 // }
-
-
-
