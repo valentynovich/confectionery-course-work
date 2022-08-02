@@ -23,7 +23,7 @@ button {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 .list {
