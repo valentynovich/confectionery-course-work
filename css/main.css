@@ -23,6 +23,7 @@ button {
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #fff;
 }
 
 .list {
@@ -492,7 +493,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 345px;
+  min-width: 345px;
 }
 
 .content-text {
@@ -503,6 +504,7 @@ body {
   color: #4d4d4d;
   padding-left: 22px;
   position: relative;
+  min-width: 345px;
 }
 .content-text::before {
   content: "";
