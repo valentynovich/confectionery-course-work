@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=1600px" />
+  <!-- <meta name="viewport" content="width=1600" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ice cream shop</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -306,17 +307,85 @@
                       of best Taste. Foodie Moments.</p>
                   </div>
                 </div>
+                <div class="swiper-slide swiper-slide-text">
+                  <div class="slider-container"><img class="slide-img-text" src="./images/reviews/glory.jpg" alt="">
+                    <div class="slider-content">
+                      <h3 class="slider-title">Adele A. McNeill</h3>
+                      <p class="slider-text">AMIRICAN</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="content-text">Thanks a lot for the prompt service. Really appreciate. Excellence taste in
+                      Every Bite.Add a joy
+                      of best Taste. Foodie Moments.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-text">
+                  <div class="slider-container"><img class="slide-img-text" src="./images/reviews/maks.jpg" alt="">
+                    <div class="slider-content">
+                      <h3 class="slider-title">Antonio Marjorna</h3>
+                      <p class="slider-text">ITALIAN</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="content-text">Thanks a lot for the prompt service. Really appreciate. Excellence taste in
+                      Every Bite.Add a joy
+                      of best Taste. Foodie Moments.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-text">
+                  <div class="slider-container"><img class="slide-img-text" src="./images/reviews/glory.jpg" alt="">
+                    <div class="slider-content">
+                      <h3 class="slider-title">Ahujta Nakubana</h3>
+                      <p class="slider-text">JAPAN</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="content-text">Thanks a lot for the prompt service. Really appreciate. Excellence taste in
+                      Every Bite.Add a joy
+                      of best Taste. Foodie Moments.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-text">
+                  <div class="slider-container"><img class="slide-img-text" src="./images/reviews/maks.jpg" alt="">
+                    <div class="slider-content">
+                      <h3 class="slider-title">Vasil Petrenko</h3>
+                      <p class="slider-text">UKRAINE</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="content-text">Thanks a lot for the prompt service. Really appreciate. Excellence taste in
+                      Every Bite.Add a joy
+                      of best Taste. Foodie Moments.</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="swiper mySwiper">
               <div class="swiper-wrapper swiper-img">
-                <div class="swiper-slide"><img class="slide-img" src="./images/reviews/glory.jpg" alt="">
+                <div class="swiper-slide">
+                  <img class="slide-img" src="./images/reviews/glory.jpg" alt="">
                 </div>
-                <div class="swiper-slide"><img class="slide-img" src="./images/reviews/maks.jpg" alt="">
+                <div class="swiper-slide">
+                  <img class="slide-img" src="./images/reviews/maks.jpg" alt="">
                 </div>
-                <div class="swiper-slide"><img class="slide-img" src="./images/reviews/glory.jpg" alt="">
+                <div class="swiper-slide">
+                  <img class="slide-img" src="./images/reviews/glory.jpg" alt="">
                 </div>
-                <div class="swiper-slide"><img class="slide-img" src="./images/reviews/maks.jpg" alt="">
+                <div class="swiper-slide">
+                  <img class="slide-img" src="./images/reviews/maks.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="slide-img" src="./images/reviews/glory.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="slide-img" src="./images/reviews/maks.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="slide-img" src="./images/reviews/glory.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="slide-img" src="./images/reviews/maks.jpg" alt="">
                 </div>
               </div>
               <div class="swiper-button-next swiper-button-next-padding"></div>
@@ -535,41 +604,49 @@
         stretch: 0,
         slideShadows: false,
         rotate: 0,
+        // allowTouchMove: false,
+        // onlyExternal: true,
+        // swipe: false,
       },
-      // controller: {
-      //   control: myText
-      // },
     });
 
     const myText = new Swiper(".textSwiper", {
       loop: true,
-      slidesPerView: "auto",
+      slidesPerView: 1,
       spaceBetween: 26,
       centeredSlides: true,
-      initialSlide: 1,
-      // slideActiveClass: "active-slade-text",
-      // controller: {
-      //   control: myImage
-      // },
+      initialSlide: 0,
       effect: "coverflow",
       coverflowEffect: {
         scale: 0,
         stretch: 0,
         slideShadows: false,
         rotate: 0,
+        // allowTouchMove: false,
+        // onlyExternal: true,
+        // swipe: false,
+      },
+      thumbs: {
+        swiper: myImage,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
-    const swipeAllSliders = (index) => {
-      myText.slideTo(index);
-      myImage.slideTo(index);
-    }
-
-    myText.on('slideChange', () => swipeAllSliders(myText.activeIndex));
-    myImage.on('slideChange', () => swipeAllSliders(myImage.activeIndex));
 
 
-  //   myImage.controller.control = myText;
-  //   myText.controller.control = myImage;
+
+    // const swipeAllSliders = (index) => {
+    //   myImage.slideTo(index);
+    //   myImage.slideTo(index);
+    // }
+    // myText.on('slideChange', () => swipeAllSliders(myText.activeIndex));
+    // myImage.on('slideChange', () => swipeAllSliders(myImage.activeIndex));
+
+
+    // myImage.controller.control = myText;
+    // myText.controller.control = myImage;
   </script>
 </body>
 
