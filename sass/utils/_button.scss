@@ -4,13 +4,21 @@
     line-height: 1.38;
     letter-spacing: 0.04em;
     color: #fafafa;
+    outline: none;
     background: $background-btn;
     width: $width-btn;
     height: $heigth-btn;
     display: block;
     user-select: none;
     text-align: center;
-    transition: background-color $transition-time $cubic-bezier,
-        box-shadow $transition-time $cubic-bezier;
+    transition: all $transition-time $cubic-bezier;
+    //transition: background-color $transition-time $cubic-bezier, box-shadow $transition-time $cubic-bezier;
+    //-webkit-transition: background-color $transition-time $cubic-bezier, box-shadow $transition-time $cubic-bezier;
+    //-moz-transition: background-color $transition-time $cubic-bezier, box-shadow $transition-time $cubic-bezier;
+    //-ms-transition: background-color $transition-time $cubic-bezier, box-shadow $transition-time $cubic-bezier;
+    //-o-transition: background-color $transition-time $cubic-bezier, box-shadow $transition-time $cubic-bezier;
+    -webkit-transition: all $transition-time $cubic-bezier;
+    -moz-transition: all $transition-time $cubic-bezier;
+    -ms-transition: all $transition-time $cubic-bezier;
+    -o-transition: all $transition-time $cubic-bezier;
 }
-

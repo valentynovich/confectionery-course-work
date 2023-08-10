@@ -1,15 +1,22 @@
-html,
-body {
-    width: 100%;
-    display: flex;
-    // justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+// html,
+// body {
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+// }
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #fff !important;
+    background-color: #fff;
+    min-width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 .list {

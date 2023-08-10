@@ -1,67 +1,67 @@
-.question {        
-            padding-top: 191px;
-            padding-bottom: 149px;       
-        &__title {
-            text-align: center;
-            color: #000000;
-            @include font(44px, 1.18);
-            margin-bottom: 28px;
-            width: 522px;
-            margin-left: auto;
-            margin-right: auto;
+.question {
+    padding-top: 191px;
+    padding-bottom: 149px;
+
+    &__title {
+        text-align: center;
+        color: #000000;
+        @include font(44px, 1.18);
+        margin-bottom: 28px;
+        width: 522px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.question-form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    &__textarea {
+        background-color: #fafafa;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        outline: none;
+        width: 508px;
+        height: 74px;
+        border: transparent;
+        padding-left: 30px;
+        color: #6d6464;
+        resize: none;
+        padding-top: 29px;
+
+        &::placeholder {
+            color: #b5b4b4;
+            @include font(14px, 1.14);
+            transition: color $transition-time $cubic-bezier;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:hover,
+        &:focus {
+            &::placeholder {
+                color: #6d6464;
+            }
         }
     }
 
-.question-form {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-        
-        &__textarea {
-            background-color: #fafafa;
-            border-top-left-radius: 5px;
-            border-bottom-left-radius: 5px;
-            outline: none;
-            width: 508px;
-            height: 74px;
-            border: transparent;
-            padding-left: 30px;
-            color: #6d6464;
-            resize: none; 
-            padding-top: 29px;         
-        
-            &::placeholder {
-                color: #b5b4b4;
-                @include font(14px, 1.14);
-                transition: color $transition-time $cubic-bezier;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-        
-            &:hover,
-            &:focus {
-                &::placeholder {
-                    color: #6d6464;                    
-                }}         
+    &__button {
+        width: 134px;
+        height: 74px;
+        @extend %button;
+        @include font(20px, 1.15);
+        border-radius: 5px;
+        border: transparent;
+        box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2), inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
+            background-color: $background-btn-hover;
         }
-        &__button {                       
-            width: 134px;
-            height: 74px;
-            @extend %button;
-            @include font(20px, 1.15);
-            border-radius: 5px;
-            border: transparent;
-            box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-        
-            &:hover,
-            &:focus {
-                box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
-                background-color: $background-btn-hover;
-            }
-        }
+    }
 }
-
-
-

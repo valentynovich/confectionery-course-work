@@ -1,13 +1,14 @@
 .products-list {
     margin-bottom: 112px;
+
     &__item {
-            display: flex;
-            align-items: center;
-    
-            &:not(:last-child) {
-                margin-bottom: 33px;
-            }
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 33px;
         }
+    }
 }
 
 
@@ -15,14 +16,16 @@
 
 .products__img {
     &--1 {
-            margin-right: 85px;
-        }
-        &--2 {
-            margin-left: 84px;
-        }
-                &--3 {
-                    margin-right: 87px;
-                }
+        margin-right: 85px;
+    }
+
+    &--2 {
+        margin-left: 84px;
+    }
+
+    &--3 {
+        margin-right: 87px;
+    }
 }
 
 .product-description {
@@ -32,39 +35,41 @@
         color: #000000;
         margin-bottom: 11px;
     }
+
     &__text {
         color: #4d4d4d;
         @include font(null, 1.5);
         width: 454px;
         margin-bottom: 28px;
     }
+
     &__price {
         font-family: "Hind Madurai";
         @include font(26px, 1.38);
         color: #000000;
         margin-bottom: 16px;
     }
+
     &__old-price {
-            font-family: "Hind Madurai";
-            @include font(20px, 1.4);
-            text-decoration-line: line-through;
-            color: #000000;
-            opacity: 0.7;
-            margin-left: 5px;
-        }
+        font-family: "Hind Madurai";
+        @include font(20px, 1.4);
+        text-decoration-line: line-through;
+        color: #000000;
+        opacity: 0.7;
+        margin-left: 5px;
+    }
+
     &__button {
-            @extend %button;
-            border-radius: 5px;
-            border: transparent;
-            box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2);
-        
-            &:hover,
-            &:focus {
-                box-shadow: inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
-                background-color: $background-btn-hover;
-            }
+        @extend %button;
+        border-radius: 5px;
+        border: transparent;
+        box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.2), inset 0 0 0 0 rgba(0, 0, 0, 0.2);
+
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), inset 5px 5px 8px 5px rgba(0, 0, 0, 0.2);
+            background-color: $background-btn-hover;
         }
+    }
 }
-
-
-
